@@ -60,11 +60,11 @@
   .eyebrow::before{content:""; width:22px; height:1px; background:var(--gold);}
   section{position:relative;}
   ::selection{background:var(--gold-light); color:var(--ink);}
-
+ 
   /* Reveal animation */
   .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
   .reveal.in{opacity:1; transform:translateY(0);}
-
+ 
   /* ===== Lotus mark ===== */
   .mark{display:inline-flex;}
   .mark svg{display:block;}
@@ -74,7 +74,7 @@
     .spin-slow{animation:none;}
     .reveal{transition:none; opacity:1; transform:none;}
   }
-
+ 
   /* ===== Top utility bar ===== */
   .utility-bar{
     background:var(--ink); color:var(--cream-soft);
@@ -86,7 +86,7 @@
     padding:9px 32px; text-align:center;
   }
   .utility-bar strong{color:var(--gold-light); font-weight:700;}
-
+ 
   /* ===== Nav ===== */
   header.site-nav{
     position:sticky; top:0; z-index:100;
@@ -121,6 +121,26 @@
     position:absolute; top:6px; right:6px; width:7px; height:7px; border-radius:50%;
     background:var(--gold-deep); border:1.5px solid var(--bg);
   }
+  .count-badge{
+    position:absolute; top:1px; right:1px; min-width:16px; height:16px; padding:0 4px;
+    border-radius:100px; background:var(--gold-deep); color:#fff; font-size:10px; font-weight:800;
+    display:flex; align-items:center; justify-content:center; line-height:1; border:1.5px solid var(--bg);
+    transform:scale(1); transition:transform .25s cubic-bezier(.34,1.56,.64,1);
+  }
+  [data-theme="dark"] .count-badge{background:var(--gold); color:#1a1710;}
+  .count-badge.bump{animation:badge-bump .35s ease;}
+  @keyframes badge-bump{ 30%{transform:scale(1.4);} 60%{transform:scale(.9);} 100%{transform:scale(1);} }
+ 
+  .thumb-actions{position:absolute; top:10px; right:10px; display:flex; flex-direction:column; gap:8px;}
+  .prod-bag{
+    width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.85);
+    display:flex; align-items:center; justify-content:center; transition:transform .2s ease, background .2s ease;
+  }
+  .prod-bag svg{width:15px; height:15px; stroke:var(--ink);}
+  .prod-bag:hover{transform:scale(1.1); background:var(--gold);}
+  .prod-bag:hover svg{stroke:#fff;}
+  .prod-heart.bump, .prod-bag.bump{animation:heart-bump .4s ease;}
+  @keyframes heart-bump{ 0%{transform:scale(1);} 35%{transform:scale(1.3);} 60%{transform:scale(.92);} 100%{transform:scale(1);} }
   .cta-btn{
     display:inline-flex; align-items:center; gap:8px;
     background:var(--ink); color:var(--cream-soft);
@@ -146,7 +166,7 @@
   .mobile-panel a{padding:12px 4px; font-weight:600; border-bottom:1px solid var(--line); font-size:15px;}
   .mobile-panel a:last-child{border-bottom:none;}
   .mobile-panel.open{display:flex;}
-
+ 
   /* ===== Marquee ===== */
   .marquee{
     border-bottom:1px solid var(--line); overflow:hidden; background:var(--surface);
@@ -161,7 +181,7 @@
   }
   .marquee-track span::after{content:"✦"; color:var(--gold); font-style:normal;}
   @keyframes scroll-left{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
-
+ 
   /* ===== Hero ===== */
   .hero{padding:96px 0 80px; overflow:hidden;}
   .hero .wrap{display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:center;}
@@ -182,7 +202,7 @@
     font-family:'Fraunces', serif; font-size:26px; display:block; font-weight:500;
   }
   .hero-stats div span{font-size:12.5px; color:var(--text-soft); letter-spacing:.03em;}
-
+ 
   .hero-visual{position:relative; height:520px;}
   .hv-card{
     position:absolute; border-radius:var(--radius-lg); box-shadow:var(--shadow);
@@ -206,7 +226,7 @@
     white-space:nowrap;
   }
   [data-theme="dark"] .hv-badge{background:var(--gold); color:#1a1710;}
-
+ 
   /* Illustrated product art (CSS, no external images) */
   .art{width:100%; height:100%; position:relative; display:flex; align-items:center; justify-content:center;}
   .art-tee{background:linear-gradient(160deg, #EFE6D2, #DCC79B);}
@@ -216,7 +236,7 @@
   .art-cap{background:linear-gradient(160deg, #EFE6D2, #C7A468);}
   .art-bottle{background:linear-gradient(160deg, #E9DCC0, #B79358);}
   .art svg{width:46%; height:46%; opacity:.92;}
-
+ 
   /* ===== Section heading ===== */
   .sec-head{display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:44px; flex-wrap:wrap;}
   .sec-head h2{font-size:clamp(28px,3.4vw,40px); font-weight:500; margin-top:14px; max-width:600px;}
@@ -224,7 +244,7 @@
   .see-all{font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px; white-space:nowrap;}
   .see-all svg{width:15px; height:15px; transition:transform .2s ease;}
   .see-all:hover svg{transform:translateX(4px);}
-
+ 
   /* ===== Categories ===== */
   .categories{padding:88px 0;}
   .cat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
@@ -248,7 +268,7 @@
     content:""; position:absolute; width:220px; height:220px; border-radius:50%;
     border:1px solid var(--line); right:-90px; bottom:-90px; opacity:.6;
   }
-
+ 
   /* ===== Products ===== */
   .products{padding:88px 0; background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .tab-row{display:flex; gap:10px; margin-bottom:40px; flex-wrap:wrap;}
@@ -271,7 +291,7 @@
   }
   [data-theme="dark"] .prod-tag{background:var(--gold); color:#1a1710;}
   .prod-heart{
-    position:absolute; top:10px; right:10px; width:32px; height:32px; border-radius:50%;
+    position:relative; width:32px; height:32px; border-radius:50%;
     background:rgba(255,255,255,.85); display:flex; align-items:center; justify-content:center;
     transition:transform .2s ease;
   }
@@ -286,7 +306,7 @@
   .price small{font-size:12.5px; color:var(--text-soft); text-decoration:line-through; font-weight:400; margin-left:6px;}
   .stars{display:flex; gap:2px;}
   .stars svg{width:11px; height:11px; fill:var(--gold);}
-
+ 
   /* ===== Studio ===== */
   .studio{padding:96px 0;}
   .studio-grid{display:grid; grid-template-columns:.95fr 1.05fr; gap:64px; align-items:center;}
@@ -300,7 +320,7 @@
   [data-theme="dark"] .step-num{color:var(--gold);}
   .step h4{font-size:16.5px; font-weight:700; margin-bottom:6px;}
   .step p{font-size:14px; color:var(--text-soft); line-height:1.6; max-width:400px;}
-
+ 
   .studio-panel{
     background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
     box-shadow:var(--shadow); overflow:hidden;
@@ -328,7 +348,7 @@
   .panel-price{margin-top:auto; padding-top:14px; border-top:1px solid var(--line);}
   .panel-price .amt{font-family:'Fraunces', serif; font-size:22px; font-weight:500;}
   .panel-price span{font-size:11.5px; color:var(--text-soft);}
-
+ 
   /* ===== Collection banner ===== */
   .collection{padding:0 0 96px;}
   .collection-banner{
@@ -347,7 +367,7 @@
   .collection-banner h2{font-size:clamp(30px,3.6vw,44px); font-weight:500; margin:16px 0 18px;}
   .collection-banner p{color:#E7DCC4; font-size:15.5px; margin-bottom:28px; line-height:1.6;}
   .collection-banner .cta-btn{background:var(--gold-light); color:#2A2318;}
-
+ 
   /* ===== Testimonials ===== */
   .testimonials{padding:88px 0; background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .test-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
@@ -365,7 +385,7 @@
   }
   .test-who b{font-size:13.5px; display:block;}
   .test-who span{font-size:12px; color:var(--text-soft);}
-
+ 
   /* ===== Instagram ===== */
   .insta{padding:88px 0;}
   .insta-grid{display:grid; grid-template-columns:repeat(6,1fr); gap:14px;}
@@ -378,7 +398,7 @@
     content:""; position:absolute; inset:0; background:rgba(0,0,0,0); transition:background .25s ease;
   }
   .insta-tile:hover::after{background:rgba(0,0,0,.15);}
-
+ 
   /* ===== Newsletter / trust ===== */
   .trust{padding:0 0 96px;}
   .trust-row{
@@ -392,7 +412,7 @@
   [data-theme="dark"] .trust-item svg{stroke:var(--gold);}
   .trust-item b{font-size:13.5px; display:block;}
   .trust-item span{font-size:11.5px; color:var(--text-soft);}
-
+ 
   .newsletter{
     border-radius:var(--radius-lg); border:1px solid var(--line); background:var(--surface);
     padding:56px; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;
@@ -405,7 +425,7 @@
     font-family:inherit; font-size:14px; color:var(--text); width:260px;
   }
   .nl-form input:focus{outline:2px solid var(--gold); outline-offset:1px;}
-
+ 
   /* ===== Footer ===== */
   footer{background:var(--ink); color:var(--cream-soft); padding:70px 0 0;}
   [data-theme="dark"] footer{background:#0E0C09;}
@@ -434,7 +454,171 @@
   .pay-icons span{
     font-size:10.5px; font-weight:700; border:1px solid rgba(246,241,231,.2); border-radius:5px; padding:5px 8px; color:#C9BDA4;
   }
-
+ 
+  /* ===== Overlay scrim (shared by search + drawers) ===== */
+  .scrim{
+    position:fixed; inset:0; background:rgba(15,12,8,.5); backdrop-filter:blur(3px);
+    opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:200;
+  }
+  .scrim.open{opacity:1; pointer-events:auto;}
+  body.no-scroll{overflow:hidden;}
+ 
+  /* ===== Search overlay ===== */
+  .search-overlay{
+    position:fixed; top:0; left:0; right:0; z-index:210;
+    display:flex; justify-content:center;
+    opacity:0; visibility:hidden; transform:translateY(-14px) scale(.98);
+    transition:opacity .28s ease, transform .28s ease, visibility 0s linear .28s;
+  }
+  .search-overlay.open{
+    opacity:1; visibility:visible; transform:translateY(0) scale(1);
+    transition:opacity .28s ease, transform .28s ease;
+  }
+  .search-panel{
+    width:100%; max-width:720px; margin-top:8vh; max-height:82vh;
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); display:flex; flex-direction:column; overflow:hidden;
+  }
+  .search-input-row{display:flex; align-items:center; gap:14px; padding:20px 22px; border-bottom:1px solid var(--line);}
+  .search-input-row svg{width:20px; height:20px; stroke:var(--text-soft); flex:none;}
+  #searchInput{
+    flex:1; border:none; background:none; font-family:'Fraunces', serif; font-size:20px;
+    color:var(--text); outline:none;
+  }
+  #searchInput::placeholder{color:var(--text-soft); opacity:.7;}
+  .search-close{
+    width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:var(--surface); flex:none;
+  }
+  .search-close svg{width:14px; height:14px; stroke:var(--text);}
+  .search-kbd{font-size:11px; color:var(--text-soft); border:1px solid var(--line); border-radius:5px; padding:2px 6px; flex:none;}
+  .search-body{overflow-y:auto; padding:20px 22px 26px;}
+  .search-section{margin-bottom:22px;}
+  .search-section:last-child{margin-bottom:0;}
+  .search-section h6{
+    font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-soft); font-weight:700;
+    margin-bottom:12px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .search-section h6 button{font-size:11px; font-weight:700; color:var(--gold-deep); text-transform:none; letter-spacing:0;}
+  .chip-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-size:13px; font-weight:600; padding:8px 14px; border-radius:100px; border:1px solid var(--line);
+    background:var(--surface); display:inline-flex; align-items:center; gap:6px; transition:border-color .2s ease, background .2s ease;
+  }
+  .chip:hover{border-color:var(--gold); background:var(--bg);}
+  .chip svg{width:12px; height:12px; stroke:var(--text-soft);}
+  .search-results{display:grid; grid-template-columns:repeat(2,1fr); gap:12px;}
+  .sr-card{
+    display:flex; gap:12px; padding:10px; border:1px solid var(--line); border-radius:var(--radius-sm);
+    background:var(--surface); position:relative; transition:border-color .2s ease, transform .2s ease;
+  }
+  .sr-card:hover{border-color:var(--gold); transform:translateY(-2px);}
+  .sr-thumb{width:56px; height:56px; border-radius:10px; flex:none; overflow:hidden;}
+  .sr-thumb .art svg{width:60%; height:60%;}
+  .sr-info{flex:1; min-width:0;}
+  .sr-info h5{font-size:13.5px; font-weight:700; margin-bottom:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .sr-info .sr-cat{font-size:11px; color:var(--text-soft);}
+  .sr-info .sr-price{font-family:'Fraunces', serif; font-size:14.5px; margin-top:4px;}
+  .sr-actions{position:absolute; top:8px; right:8px; display:flex; gap:6px;}
+  .sr-actions button{
+    width:26px; height:26px; border-radius:50%; background:var(--bg); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .sr-actions button svg{width:12px; height:12px; stroke:var(--text);}
+  .sr-actions button.js-wishlist-btn.active svg{fill:var(--gold-deep); stroke:var(--gold-deep);}
+  .search-empty{text-align:center; padding:30px 10px;}
+  .search-empty svg{width:44px; height:44px; stroke:var(--text-soft); margin-bottom:14px;}
+  .search-empty p{color:var(--text-soft); font-size:14.5px; margin-bottom:4px;}
+ 
+  /* ===== Slide-out drawers (wishlist / cart) ===== */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:420px; max-width:92vw; z-index:220;
+    background:color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter:blur(16px) saturate(140%);
+    border-left:1px solid var(--line); box-shadow:var(--shadow);
+    display:flex; flex-direction:column; transform:translateX(100%);
+    transition:transform .32s cubic-bezier(.22,1,.36,1);
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{
+    display:flex; align-items:center; justify-content:space-between; padding:22px 24px; border-bottom:1px solid var(--line);
+  }
+  .drawer-head h3{font-family:'Fraunces', serif; font-size:21px; font-weight:500; display:flex; align-items:center; gap:10px;}
+  .drawer-head h3 svg{width:19px; height:19px; stroke:var(--gold-deep);}
+  [data-theme="dark"] .drawer-head h3 svg{stroke:var(--gold);}
+  .drawer-head .count-pill{
+    font-size:11.5px; font-weight:700; background:var(--surface); border:1px solid var(--line);
+    padding:3px 9px; border-radius:100px; color:var(--text-soft);
+  }
+  .drawer-close{width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface);}
+  .drawer-close svg{width:14px; height:14px; stroke:var(--text);}
+  .drawer-body{flex:1; overflow-y:auto; padding:18px 24px;}
+  .drawer-empty{
+    height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:16px; padding:30px;
+  }
+  .drawer-empty svg{width:64px; height:64px; stroke:var(--line); stroke-width:1.2;}
+  .drawer-empty p{color:var(--text-soft); font-size:15px;}
+ 
+  .dline-item{display:flex; gap:14px; padding:16px 0; border-bottom:1px solid var(--line);}
+  .dline-thumb{width:74px; height:74px; border-radius:var(--radius-sm); flex:none; overflow:hidden;}
+  .dline-thumb .art svg{width:55%; height:55%;}
+  .dline-info{flex:1; min-width:0; display:flex; flex-direction:column; gap:4px;}
+  .dline-info h5{font-size:14.5px; font-weight:700;}
+  .dline-meta{font-size:12px; color:var(--text-soft);}
+  .dline-price{font-family:'Fraunces', serif; font-size:15px; margin-top:2px;}
+  .dline-row{display:flex; align-items:center; justify-content:space-between; margin-top:auto; gap:8px;}
+  .qty-stepper{display:flex; align-items:center; gap:0; border:1px solid var(--line); border-radius:100px; overflow:hidden;}
+  .qty-stepper button{width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px;}
+  .qty-stepper button:hover{background:var(--surface);}
+  .qty-stepper span{min-width:22px; text-align:center; font-size:13px; font-weight:700;}
+  .dline-actions{display:flex; gap:12px;}
+  .dline-actions button{font-size:12px; font-weight:700; color:var(--text-soft); display:flex; align-items:center; gap:4px;}
+  .dline-actions button:hover{color:var(--gold-deep);}
+  .dline-actions svg{width:13px; height:13px;}
+  .stock-pill{font-size:10.5px; font-weight:700; padding:2px 8px; border-radius:100px; display:inline-flex; width:fit-content;}
+  .stock-pill.in{color:#3E6B4F; background:rgba(62,107,79,.12);}
+  .stock-pill.low{color:#9C6B1B; background:rgba(156,107,27,.12);}
+ 
+  .drawer-summary{border-top:1px solid var(--line); padding:18px 24px 22px; flex:none;}
+  .sum-row{display:flex; align-items:center; justify-content:space-between; font-size:13.5px; color:var(--text-soft); margin-bottom:9px;}
+  .sum-row.total{color:var(--text); font-size:16px; font-weight:700; font-family:'Fraunces', serif; margin-top:12px; padding-top:12px; border-top:1px solid var(--line);}
+  .coupon-row{display:flex; gap:8px; margin:14px 0;}
+  .coupon-row input{
+    flex:1; background:var(--surface); border:1px solid var(--line); border-radius:100px; padding:9px 14px; font-size:13px; color:var(--text);
+  }
+  .coupon-row button{
+    font-size:12.5px; font-weight:700; padding:9px 16px; border-radius:100px; border:1px solid var(--line);
+  }
+  .coupon-row button:hover{border-color:var(--gold); background:var(--surface);}
+  .drawer-ctas{display:flex; flex-direction:column; gap:10px; margin-top:6px;}
+  .drawer-ctas .cta-btn, .drawer-ctas .cta-ghost{justify-content:center; width:100%;}
+ 
+  /* ===== Toasts ===== */
+  .toast-stack{
+    position:fixed; bottom:22px; right:22px; z-index:300; display:flex; flex-direction:column; gap:10px; max-width:340px;
+  }
+  .toast{
+    background:var(--ink); color:var(--cream-soft); border-radius:var(--radius-sm); padding:14px 16px;
+    display:flex; align-items:center; gap:12px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+    transform:translateX(120%); opacity:0; transition:transform .35s cubic-bezier(.22,1,.36,1), opacity .35s ease;
+  }
+  [data-theme="dark"] .toast{background:var(--surface); border:1px solid var(--line);}
+  .toast.show{transform:translateX(0); opacity:1;}
+  .toast .t-icon{width:20px; height:20px; flex:none; stroke:var(--gold-light);}
+  [data-theme="dark"] .toast .t-icon{stroke:var(--gold);}
+  .toast .t-text{font-size:13.5px; font-weight:600;}
+  .toast .t-bar{position:absolute; left:0; bottom:0; height:2.5px; background:var(--gold); animation:toast-bar 3.2s linear forwards;}
+  @keyframes toast-bar{ from{width:100%;} to{width:0%;} }
+ 
+  @media (max-width:640px){
+    .search-overlay{align-items:flex-end;}
+    .search-panel{max-width:100%; max-height:100%; height:100%; margin-top:0; border-radius:0;}
+    .search-results{grid-template-columns:1fr;}
+    .drawer{width:100%; max-width:100%; top:auto; bottom:0; height:88vh; border-left:none; border-top:1px solid var(--line);
+      border-radius:var(--radius-lg) var(--radius-lg) 0 0; transform:translateY(100%);}
+    .drawer.open{transform:translateY(0);}
+    .toast-stack{left:16px; right:16px; bottom:16px; max-width:none;}
+  }
+ 
   @media (max-width:980px){
     .nav-links{display:none;}
     .hamburger{display:flex;}
@@ -467,15 +651,199 @@
   a:focus-visible, button:focus-visible, input:focus-visible{
     outline:2px solid var(--gold-deep); outline-offset:2px;
   }
+  /* ======================================================================
+     SEARCH OVERLAY
+  ====================================================================== */
+  .search-overlay{
+    position:fixed; inset:0; z-index:300; display:flex; justify-content:center;
+    padding:10vh 20px 40px; overflow-y:auto;
+    background:rgba(22,19,15,0); backdrop-filter:blur(0px);
+    opacity:0; pointer-events:none; transition:opacity .3s ease, background .3s ease, backdrop-filter .3s ease;
+  }
+  .search-overlay.open{
+    opacity:1; pointer-events:auto; background:rgba(22,19,15,.45); backdrop-filter:blur(6px);
+  }
+  .search-panel{
+    width:100%; max-width:680px; max-height:78vh; background:var(--bg); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); border:1px solid var(--line); overflow:hidden; display:flex; flex-direction:column;
+    transform:translateY(-16px) scale(.97); opacity:0; transition:transform .32s cubic-bezier(.2,.8,.2,1), opacity .3s ease;
+  }
+  .search-overlay.open .search-panel{transform:translateY(0) scale(1); opacity:1;}
+  .search-input-row{display:flex; align-items:center; gap:14px; padding:20px 22px; border-bottom:1px solid var(--line); flex:none;}
+  .search-input-row svg{width:20px; height:20px; stroke:var(--text-soft); flex:none;}
+  #searchInput{
+    flex:1; border:none; outline:none; background:transparent; font-family:'Fraunces', serif;
+    font-size:20px; color:var(--text); font-style:italic;
+  }
+  #searchInput::placeholder{color:var(--text-soft); opacity:.7;}
+  .search-close{
+    width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:var(--surface); flex:none; transition:background .2s ease;
+  }
+  .search-close:hover{background:var(--gold-light);}
+  .search-close svg{width:15px; height:15px; stroke:var(--text);}
+  .search-kbd{
+    font-size:11px; border:1px solid var(--line); border-radius:6px; padding:2px 6px; color:var(--text-soft);
+    flex:none; font-family:'Manrope',sans-serif;
+  }
+  .search-body{overflow-y:auto; padding:20px 22px 26px;}
+  .search-section{margin-bottom:22px;}
+  .search-section:last-child{margin-bottom:0;}
+  .search-section h6{
+    font-size:11px; text-transform:uppercase; letter-spacing:.07em; color:var(--text-soft); font-weight:800;
+    margin-bottom:12px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .search-section h6 button{font-size:11px; font-weight:700; color:var(--gold-deep); text-transform:none; letter-spacing:0;}
+  [data-theme="dark"] .search-section h6 button{color:var(--gold);}
+  .chip-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    padding:8px 14px; border-radius:100px; border:1px solid var(--line); font-size:13px; font-weight:600;
+    display:flex; align-items:center; gap:6px; transition:border-color .2s ease, background .2s ease;
+  }
+  .chip:hover{border-color:var(--gold); background:var(--surface);}
+  .chip svg{width:12px; height:12px; stroke:var(--text-soft);}
+  .search-results{display:flex; flex-direction:column; gap:4px;}
+  .sr-card{
+    display:flex; align-items:center; gap:14px; padding:10px; border-radius:var(--radius-sm);
+    transition:background .18s ease; cursor:pointer;
+  }
+  .sr-card:hover, .sr-card:focus-visible{background:var(--surface);}
+  .sr-thumb{width:56px; height:56px; border-radius:12px; flex:none; display:flex; align-items:center; justify-content:center;}
+  .sr-thumb svg{width:26px; height:26px;}
+  .sr-info{flex:1; min-width:0;}
+  .sr-info .cat{font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-soft); font-weight:700;}
+  .sr-info h5{font-size:14.5px; font-weight:700; margin:2px 0 3px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .sr-meta{display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--text-soft);}
+  .sr-price{font-family:'Fraunces', serif; font-weight:600; color:var(--text);}
+  .sr-actions{display:flex; gap:6px; flex:none;}
+  .sr-actions button{
+    width:32px; height:32px; border-radius:50%; border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; transition:all .2s ease;
+  }
+  .sr-actions button:hover{border-color:var(--gold); background:var(--gold-light);}
+  .sr-actions svg{width:14px; height:14px; stroke:var(--text);}
+  .sr-actions .js-wishlist-btn.active svg{fill:var(--gold-deep); stroke:var(--gold-deep);}
+  .search-empty{text-align:center; padding:30px 10px;}
+  .search-empty svg{width:44px; height:44px; stroke:var(--text-soft); margin:0 auto 14px;}
+  .search-empty p{font-size:14.5px; color:var(--text-soft); margin-bottom:4px;}
+  .search-empty strong{font-family:'Fraunces', serif; font-size:19px; display:block; margin-bottom:6px;}
+ 
+  /* ======================================================================
+     DRAWERS (Wishlist / Cart)
+  ====================================================================== */
+  .drawer-scrim{
+    position:fixed; inset:0; z-index:290; background:rgba(22,19,15,0); backdrop-filter:blur(0px);
+    opacity:0; pointer-events:none; transition:opacity .3s ease, background .3s ease, backdrop-filter .3s ease;
+  }
+  .drawer-scrim.open{opacity:1; pointer-events:auto; background:rgba(22,19,15,.4); backdrop-filter:blur(4px);}
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(420px, 94vw); z-index:295;
+    background:var(--bg); border-left:1px solid var(--line); box-shadow:var(--shadow);
+    display:flex; flex-direction:column; transform:translateX(100%);
+    transition:transform .32s cubic-bezier(.2,.8,.2,1);
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{
+    display:flex; align-items:center; justify-content:space-between; padding:22px 24px; border-bottom:1px solid var(--line);
+    flex:none;
+  }
+  .drawer-head h3{font-family:'Fraunces', serif; font-size:22px; font-weight:500; display:flex; align-items:center; gap:10px;}
+  .drawer-head h3 svg{width:19px; height:19px; stroke:var(--gold-deep);}
+  [data-theme="dark"] .drawer-head h3 svg{stroke:var(--gold);}
+  .drawer-head .count-pill{
+    font-size:11.5px; background:var(--surface); border:1px solid var(--line); border-radius:100px; padding:2px 9px; font-weight:700;
+  }
+  .drawer-close{
+    width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface);
+  }
+  .drawer-close:hover{background:var(--gold-light);}
+  .drawer-close svg{width:15px; height:15px; stroke:var(--text);}
+  .drawer-body{flex:1; overflow-y:auto; padding:18px 24px;}
+  .drawer-empty{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+    height:100%; gap:16px; padding:40px 20px;
+  }
+  .drawer-empty svg{width:64px; height:64px; stroke:var(--text-soft); opacity:.5;}
+  .drawer-empty p{font-size:15px; color:var(--text-soft);}
+ 
+  .dr-item{display:flex; gap:14px; padding:16px 0; border-bottom:1px solid var(--line);}
+  .dr-item:last-child{border-bottom:none;}
+  .dr-thumb{width:74px; height:74px; border-radius:14px; flex:none; display:flex; align-items:center; justify-content:center;}
+  .dr-thumb svg{width:32px; height:32px;}
+  .dr-info{flex:1; min-width:0;}
+  .dr-info h5{font-size:14.5px; font-weight:700; margin-bottom:3px;}
+  .dr-attrs{display:flex; gap:8px; font-size:12px; color:var(--text-soft); margin-bottom:6px; flex-wrap:wrap;}
+  .dr-attrs span{border:1px solid var(--line); border-radius:6px; padding:1px 7px;}
+  .dr-bottom-row{display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;}
+  .dr-price{font-family:'Fraunces', serif; font-weight:600; font-size:15px;}
+  .qty-stepper{display:flex; align-items:center; gap:0; border:1px solid var(--line); border-radius:100px; overflow:hidden;}
+  .qty-stepper button{width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;}
+  .qty-stepper button:hover{background:var(--surface);}
+  .qty-stepper span{min-width:22px; text-align:center; font-size:13px; font-weight:700;}
+  .dr-actions-row{display:flex; align-items:center; gap:14px; margin-top:8px;}
+  .dr-link-btn{font-size:12px; font-weight:700; color:var(--text-soft); display:flex; align-items:center; gap:5px; transition:color .2s ease;}
+  .dr-link-btn:hover{color:var(--gold-deep);}
+  [data-theme="dark"] .dr-link-btn:hover{color:var(--gold);}
+  .dr-link-btn svg{width:13px; height:13px;}
+  .stock-ok{color:#5B7A52;}
+  [data-theme="dark"] .stock-ok{color:#8FBF80;}
+  .stock-low{color:#B0742A;}
+ 
+  .drawer-summary{border-top:1px solid var(--line); padding:18px 24px 24px; flex:none;}
+  .sum-row{display:flex; align-items:center; justify-content:space-between; font-size:13.5px; color:var(--text-soft); margin-bottom:9px;}
+  .sum-row.total{font-size:16px; font-weight:800; color:var(--text); margin-top:12px; padding-top:12px; border-top:1px dashed var(--line);}
+  .coupon-row{display:flex; gap:8px; margin:14px 0;}
+  .coupon-row input{
+    flex:1; background:var(--surface); border:1px solid var(--line); border-radius:100px; padding:9px 16px; font-size:13px; font-family:inherit; color:var(--text);
+  }
+  .coupon-row button{
+    padding:9px 16px; border-radius:100px; border:1px solid var(--line); font-size:12.5px; font-weight:700; white-space:nowrap;
+  }
+  .coupon-row button:hover{border-color:var(--gold); background:var(--gold-light);}
+  .drawer-cta-row{display:flex; flex-direction:column; gap:10px; margin-top:14px;}
+  .drawer-cta-row .cta-btn{justify-content:center; width:100%;}
+  .drawer-cta-row .cta-ghost{justify-content:center; width:100%;}
+ 
+  /* ======================================================================
+     TOASTS
+  ====================================================================== */
+  .toast-stack{
+    position:fixed; bottom:22px; right:22px; z-index:400; display:flex; flex-direction:column-reverse; gap:10px;
+    max-width:340px;
+  }
+  .toast{
+    background:var(--ink); color:var(--cream-soft); border-radius:14px; padding:13px 16px; box-shadow:var(--shadow);
+    display:flex; align-items:center; gap:12px; overflow:hidden; position:relative;
+    transform:translateX(120%); opacity:0; transition:transform .35s cubic-bezier(.2,.8,.2,1), opacity .3s ease;
+  }
+  [data-theme="dark"] .toast{background:#2B2519;}
+  .toast.show{transform:translateX(0); opacity:1;}
+  .toast .t-icon{width:20px; height:20px; flex:none; stroke:var(--gold-light);}
+  .toast p{font-size:13.5px; font-weight:600; line-height:1.4;}
+  .toast .t-bar{position:absolute; left:0; bottom:0; height:2.5px; background:var(--gold); width:100%; transform-origin:left;}
+  @media (prefers-reduced-motion: no-preference){
+    .toast .t-bar.run{animation:toast-run linear forwards;}
+  }
+  @keyframes toast-run{ from{transform:scaleX(1);} to{transform:scaleX(0);} }
+ 
+  /* Focus trap helper: hide visually-focusless outlines only when not using keyboard */
+  .search-panel, .drawer{outline:none;}
+ 
+  @media (max-width:640px){
+    .search-overlay{padding:0;}
+    .search-panel{max-width:100%; max-height:100%; height:100%; border-radius:0;}
+    .drawer{width:100%;}
+    .toast-stack{left:12px; right:12px; bottom:12px; max-width:none;}
+  }
 </style>
 </head>
 <body data-theme="light">
-
+ 
 <!-- ===== Utility bar ===== -->
 <div class="utility-bar">
   <div class="wrap"><span><strong>Free shipping</strong> on orders above ₹999 · Design your own merch in minutes ✦</span></div>
 </div>
-
+ 
 <!-- ===== Nav ===== -->
 <header class="site-nav">
   <div class="nav-row wrap">
@@ -495,9 +863,9 @@
         <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
         <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" style="display:none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
       </button>
-      <button class="icon-btn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
-      <button class="icon-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
-      <button class="icon-btn" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg><span class="badge-dot"></span></button>
+      <button class="icon-btn" id="searchIcon" aria-label="Open search" aria-haspopup="dialog" aria-expanded="false" aria-controls="searchOverlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      <button class="icon-btn" id="wishlistIcon" aria-label="Open wishlist" aria-haspopup="dialog" aria-expanded="false" aria-controls="wishlistDrawer"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg><span class="count-badge" id="wishlistCount" hidden>0</span></button>
+      <button class="icon-btn" id="cartIcon" aria-label="Open cart" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg><span class="count-badge" id="cartCount" hidden>0</span></button>
       <a href="#" class="cta-btn">Start Designing</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
@@ -511,7 +879,7 @@
     <a href="#" class="cta-btn" style="justify-content:center; margin-top:12px;">Start Designing</a>
   </div>
 </header>
-
+ 
 <!-- ===== Marquee ===== -->
 <div class="marquee">
   <div class="marquee-track">
@@ -519,7 +887,7 @@
     <span>Tees</span><span>Hoodies</span><span>Jerseys</span><span>Mugs</span><span>Tote Bags</span><span>Caps</span><span>Phone Covers</span><span>Sippers</span>
   </div>
 </div>
-
+ 
 <!-- ===== Hero ===== -->
 <section class="hero">
   <div class="wrap">
@@ -565,7 +933,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Categories ===== -->
 <section class="categories" id="categories">
   <div class="wrap">
@@ -604,7 +972,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Products ===== -->
 <section class="products" id="products">
   <div class="wrap">
@@ -622,13 +990,16 @@
       <button class="tab">New Arrivals</button>
       <button class="tab">Best Sellers</button>
     </div>
-    <div class="prod-grid">
-
-      <div class="prod-card reveal">
+    <div class="prod-grid" id="prodGrid">
+ 
+      <div class="prod-card reveal" data-id="p1">
         <div class="prod-thumb">
           <div class="art art-tee"><svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 22 20 28l5 13 7-4v39h36V37l7 4 5-13-12-6-9 6H41l-9-6Z"/></svg></div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p1" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p1" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Oversized Tee</span>
@@ -639,12 +1010,15 @@
           </div>
         </div>
       </div>
-
-      <div class="prod-card reveal">
+ 
+      <div class="prod-card reveal" data-id="p2">
         <div class="prod-thumb">
           <div class="art art-hoodie"><svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M30 24 20 30l4 12 6-3v37h40V39l6 3 4-12-10-6-8 6H38l-8-6Z"/><path d="M40 24c1 5 5 8 10 8s9-3 10-8"/></svg></div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart active" aria-label="Remove from wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p2" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p2" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Hoodie</span>
@@ -655,14 +1029,17 @@
           </div>
         </div>
       </div>
-
-      <div class="prod-card reveal">
+ 
+      <div class="prod-card reveal" data-id="p3">
         <div class="prod-thumb">
           <div class="art art-mug">
             <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M28 30h34v34a8 8 0 0 1-8 8H36a8 8 0 0 1-8-8V30Z"/><path d="M62 38h8a8 8 0 0 1 0 16h-8"/></svg>
           </div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p3" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p3" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Coffee Mug</span>
@@ -673,14 +1050,17 @@
           </div>
         </div>
       </div>
-
-      <div class="prod-card reveal">
+ 
+      <div class="prod-card reveal" data-id="p4">
         <div class="prod-thumb">
           <div class="art art-tote">
             <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M30 34h40l4 46H26l4-46Z"/><path d="M38 34v-8a12 12 0 0 1 24 0v8"/></svg>
           </div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p4" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p4" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Tote Bag</span>
@@ -691,14 +1071,17 @@
           </div>
         </div>
       </div>
-
-      <div class="prod-card reveal">
+ 
+      <div class="prod-card reveal" data-id="p5">
         <div class="prod-thumb">
           <div class="art art-cap">
             <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 56c0-16 13-29 30-29s30 13 30 29"/><path d="M20 56h60l6 8H14l6-8Z"/></svg>
           </div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p5" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p5" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Cap</span>
@@ -709,14 +1092,17 @@
           </div>
         </div>
       </div>
-
-      <div class="prod-card reveal">
+ 
+      <div class="prod-card reveal" data-id="p6">
         <div class="prod-thumb">
           <div class="art art-bottle">
             <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="38" y="16" width="24" height="10" rx="2"/><path d="M34 30c0-2 2-4 4-4h24c2 0 4 2 4 4v46a8 8 0 0 1-8 8H42a8 8 0 0 1-8-8V30Z"/></svg>
           </div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p6" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p6" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Water Bottle</span>
@@ -727,12 +1113,15 @@
           </div>
         </div>
       </div>
-
-      <div class="prod-card reveal">
+ 
+      <div class="prod-card reveal" data-id="p7">
         <div class="prod-thumb">
           <div class="art art-tee"><svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 22 20 28l5 13 7-4v39h36V37l7 4 5-13-12-6-9 6H41l-9-6Z"/></svg></div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p7" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p7" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Polo Tee</span>
@@ -743,14 +1132,17 @@
           </div>
         </div>
       </div>
-
-      <div class="prod-card reveal">
+ 
+      <div class="prod-card reveal" data-id="p8">
         <div class="prod-thumb">
           <div class="art art-mug">
             <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="28" width="48" height="34" rx="4"/><path d="M30 62c0 6 4 10 10 10h20c6 0 10-4 10-10"/></svg>
           </div>
           <span class="prod-tag">Customizable</span>
-          <button class="prod-heart" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p8" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p8" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
         </div>
         <div class="prod-info">
           <span class="cat">Phone Cover</span>
@@ -761,11 +1153,11 @@
           </div>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Custom Studio ===== -->
 <section class="studio" id="studio">
   <div class="wrap">
@@ -792,7 +1184,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="studio-panel reveal">
         <div class="panel-top">
           <span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span>
@@ -836,7 +1228,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Collection banner ===== -->
 <section class="collection" id="collection">
   <div class="wrap">
@@ -850,7 +1242,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Testimonials ===== -->
 <section class="testimonials" id="reviews">
   <div class="wrap">
@@ -906,7 +1298,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Instagram ===== -->
 <section class="insta">
   <div class="wrap">
@@ -927,7 +1319,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Trust + newsletter ===== -->
 <section class="trust">
   <div class="wrap">
@@ -949,7 +1341,7 @@
         <div><b>Easy returns</b><span>7-day exchange window</span></div>
       </div>
     </div>
-
+ 
     <div class="newsletter reveal">
       <div>
         <h3 class="display">Get 10% off your first design.</h3>
@@ -962,7 +1354,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== Footer ===== -->
 <footer>
   <div class="wrap">
@@ -1028,7 +1420,59 @@
     </div>
   </div>
 </footer>
-
+ 
+<!-- ===== Shared scrim for search + drawers ===== -->
+<div class="scrim" id="scrim"></div>
+ 
+<!-- ===== Search overlay ===== -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search RAUNA">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Search products, collections, categories…" autocomplete="off" aria-label="Search products">
+      <span class="search-kbd">Esc</span>
+      <button class="search-close" id="searchClose" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="search-body" id="searchBody"><!-- populated by search.js --></div>
+  </div>
+</div>
+ 
+<!-- ===== Wishlist drawer ===== -->
+<aside class="drawer" id="wishlistDrawer" role="dialog" aria-modal="true" aria-label="Wishlist">
+  <div class="drawer-head">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg>Wishlist <span class="count-pill" id="wishlistCountPill">0 items</span></h3>
+    <button class="drawer-close" id="wishlistClose" aria-label="Close wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="drawer-body" id="wishlistBody"><!-- populated by wishlist.js --></div>
+</aside>
+ 
+<!-- ===== Cart drawer ===== -->
+<aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg>Cart <span class="count-pill" id="cartCountPill">0 items</span></h3>
+    <button class="drawer-close" id="cartClose" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="drawer-body" id="cartBody"><!-- populated by cart.js --></div>
+  <div class="drawer-summary" id="cartSummary" hidden>
+    <div class="sum-row"><span>Subtotal</span><span id="sumSubtotal">₹0</span></div>
+    <div class="sum-row"><span>You save</span><span id="sumSavings">₹0</span></div>
+    <div class="sum-row"><span>Shipping</span><span id="sumShipping">₹0</span></div>
+    <div class="sum-row"><span>GST (5%)</span><span id="sumGst">₹0</span></div>
+    <div class="coupon-row">
+      <input type="text" id="couponInput" placeholder="Coupon code" aria-label="Coupon code">
+      <button id="couponApply">Apply</button>
+    </div>
+    <div class="sum-row total"><span>Grand Total</span><span id="sumTotal">₹0</span></div>
+    <div class="drawer-ctas">
+      <button class="cta-btn" id="checkoutBtn">Checkout</button>
+      <button class="cta-ghost" id="continueShoppingBtn">Continue Shopping</button>
+    </div>
+  </div>
+</aside>
+ 
+<!-- ===== Toast stack ===== -->
+<div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+ 
 <script>
   // Theme toggle — in-memory only (no storage), defaults to system preference
   const root = document.body;
@@ -1047,18 +1491,13 @@
     sunIcon.style.display = isDark ? 'none' : 'block';
     moonIcon.style.display = isDark ? 'block' : 'none';
   }
-
+ 
   // Mobile menu
   const hamburger = document.getElementById('hamburger');
   const mobilePanel = document.getElementById('mobilePanel');
   hamburger.addEventListener('click', () => mobilePanel.classList.toggle('open'));
   mobilePanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobilePanel.classList.remove('open')));
-
-  // Wishlist heart toggle (in-memory)
-  document.querySelectorAll('.prod-heart').forEach(btn => {
-    btn.addEventListener('click', () => btn.classList.toggle('active'));
-  });
-
+ 
   // Product tabs (visual only)
   document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', () => {
@@ -1066,12 +1505,22 @@
       tab.classList.add('active');
     });
   });
-
+ 
   // Scroll reveal
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
+<script src="js/utils.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/products.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

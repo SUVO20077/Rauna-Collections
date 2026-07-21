@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAUNA — Wear What You Design</title>
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F1E7;
+    --cream-soft:#FBF8F2;
+    --ink:#211D18;
+    --ink-soft:#5C5346;
+    --gold:#B08D57;
+    --gold-deep:#8C6D3F;
+    --gold-light:#E4D3B0;
+    --white:#FFFFFF;
+    --line: rgba(33,29,24,0.12);
+    --bg: var(--cream);
+    --surface: var(--cream-soft);
+    --text: var(--ink);
+    --text-soft: var(--ink-soft);
+    --shadow: 0 20px 50px -20px rgba(33,29,24,0.18);
+    --shadow-sm: 0 8px 24px -12px rgba(33,29,24,0.14);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --radius-sm: 10px;
+  }
+  [data-theme="dark"]{
+    --bg:#161310;
+    --surface:#211C16;
+    --text:#F3ECDE;
+    --text-soft:#C9BDA4;
+    --line: rgba(243,236,222,0.12);
+    --shadow: 0 20px 50px -20px rgba(0,0,0,0.6);
+    --shadow-sm: 0 8px 24px -12px rgba(0,0,0,0.5);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Manrope', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    transition:background .4s ease, color .4s ease;
+    overflow-x:hidden;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  ul{list-style:none;}
+  button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit;}
+  .display{font-family:'Fraunces', serif;}
+  .wrap{max-width:1240px; margin:0 auto; padding:0 32px;}
+  .eyebrow{
+    font-size:12.5px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--gold-deep); font-weight:700; display:flex; align-items:center; gap:10px;
+  }
+  [data-theme="dark"] .eyebrow{color:var(--gold);}
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--gold);}
+  section{position:relative;}
+  ::selection{background:var(--gold-light); color:var(--ink);}
+
+  /* Reveal animation */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ===== Lotus mark ===== */
+  .mark{display:inline-flex;}
+  .mark svg{display:block;}
+  .spin-slow{animation:spin 26s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  @media (prefers-reduced-motion: reduce){
+    .spin-slow{animation:none;}
+    .reveal{transition:none; opacity:1; transform:none;}
+  }
+
+  /* ===== Top utility bar ===== */
+  .utility-bar{
+    background:var(--ink); color:var(--cream-soft);
+    font-size:12.5px; letter-spacing:.03em;
+  }
+  [data-theme="dark"] .utility-bar{background:#0E0C09;}
+  .utility-bar .wrap{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:9px 32px; text-align:center;
+  }
+  .utility-bar strong{color:var(--gold-light); font-weight:700;}
+
+  /* ===== Nav ===== */
+  header.site-nav{
+    position:sticky; top:0; z-index:100;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(14px) saturate(140%);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 32px; gap:24px;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{width:38px; height:38px; border-radius:50%;}
+  .brand .wordmark{font-family:'Fraunces', serif; font-size:21px; letter-spacing:.08em; font-weight:500;}
+  .nav-links{display:flex; align-items:center; gap:34px; font-size:14.5px; font-weight:600;}
+  .nav-links a{position:relative; padding:4px 0; color:var(--text-soft);}
+  .nav-links a:hover{color:var(--text);}
+  .nav-links a::after{
+    content:""; position:absolute; left:0; bottom:-2px; width:0; height:1.5px; background:var(--gold);
+    transition:width .25s ease;
+  }
+  .nav-links a:hover::after{width:100%;}
+  .nav-actions{display:flex; align-items:center; gap:6px;}
+  .icon-btn{
+    width:40px; height:40px; display:flex; align-items:center; justify-content:center;
+    border-radius:50%; transition:background .2s ease, transform .2s ease;
+    position:relative;
+  }
+  .icon-btn:hover{background:var(--surface); transform:translateY(-1px);}
+  .icon-btn svg{width:19px; height:19px; stroke:var(--text);}
+  .badge-dot{
+    position:absolute; top:6px; right:6px; width:7px; height:7px; border-radius:50%;
+    background:var(--gold-deep); border:1.5px solid var(--bg);
+  }
+  .count-badge{
+    position:absolute; top:1px; right:1px; min-width:16px; height:16px; padding:0 4px;
+    border-radius:100px; background:var(--gold-deep); color:#fff; font-size:10px; font-weight:800;
+    display:flex; align-items:center; justify-content:center; line-height:1; border:1.5px solid var(--bg);
+    transform:scale(1); transition:transform .25s cubic-bezier(.34,1.56,.64,1);
+  }
+  [data-theme="dark"] .count-badge{background:var(--gold); color:#1a1710;}
+  .count-badge.bump{animation:badge-bump .35s ease;}
+  .count-badge[hidden]{display:none;}
+  @keyframes badge-bump{ 30%{transform:scale(1.4);} 60%{transform:scale(.9);} 100%{transform:scale(1);} }
+
+  .thumb-actions{position:absolute; top:10px; right:10px; display:flex; flex-direction:column; gap:8px;}
+  .prod-bag{
+    width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.85);
+    display:flex; align-items:center; justify-content:center; transition:transform .2s ease, background .2s ease;
+  }
+  .prod-bag svg{width:15px; height:15px; stroke:var(--ink);}
+  .prod-bag:hover{transform:scale(1.1); background:var(--gold);}
+  .prod-bag:hover svg{stroke:#fff;}
+  .prod-heart.bump, .prod-bag.bump{animation:heart-bump .4s ease;}
+  @keyframes heart-bump{ 0%{transform:scale(1);} 35%{transform:scale(1.3);} 60%{transform:scale(.92);} 100%{transform:scale(1);} }
+  .cta-btn{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--ink); color:var(--cream-soft);
+    padding:12px 22px; border-radius:100px; font-weight:700; font-size:14px;
+    letter-spacing:.01em; transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    white-space:nowrap;
+  }
+  [data-theme="dark"] .cta-btn{background:var(--gold); color:#1a1710;}
+  .cta-btn:hover{transform:translateY(-2px); box-shadow:var(--shadow-sm);}
+  .cta-ghost{
+    display:inline-flex; align-items:center; gap:8px;
+    border:1.4px solid var(--line); padding:11px 22px; border-radius:100px;
+    font-weight:700; font-size:14px; transition:border-color .25s ease, background .25s ease;
+  }
+  .cta-ghost:hover{border-color:var(--gold); background:var(--surface);}
+  .hamburger{display:none; width:40px; height:40px; align-items:center; justify-content:center; border-radius:50%;}
+  .hamburger:hover{background:var(--surface);}
+  .hamburger svg{width:22px; height:22px; stroke:var(--text);}
+  .mobile-panel{
+    display:none; flex-direction:column; gap:2px; padding:8px 32px 22px;
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-panel a{padding:12px 4px; font-weight:600; border-bottom:1px solid var(--line); font-size:15px;}
+  .mobile-panel a:last-child{border-bottom:none;}
+  .mobile-panel.open{display:flex;}
+
+  /* ===== Marquee ===== */
+  .marquee{
+    border-bottom:1px solid var(--line); overflow:hidden; background:var(--surface);
+  }
+  .marquee-track{
+    display:flex; gap:48px; white-space:nowrap; padding:13px 0;
+    animation:scroll-left 32s linear infinite; width:max-content;
+  }
+  .marquee-track span{
+    font-family:'Fraunces', serif; font-style:italic; font-size:14.5px; color:var(--text-soft);
+    display:flex; align-items:center; gap:48px;
+  }
+  .marquee-track span::after{content:"✦"; color:var(--gold); font-style:normal;}
+  @keyframes scroll-left{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+
+  /* ===== Hero ===== */
+  .hero{padding:96px 0 80px; overflow:hidden;}
+  .hero .wrap{display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:center;}
+  .hero h1{
+    font-size:clamp(40px,5.4vw,68px); line-height:1.04; font-weight:500; letter-spacing:-.01em;
+    margin:22px 0 24px;
+  }
+  .hero h1 em{
+    font-style:italic; color:var(--gold-deep); font-weight:400;
+  }
+  [data-theme="dark"] .hero h1 em{color:var(--gold);}
+  .hero p.lead{
+    font-size:17.5px; line-height:1.65; color:var(--text-soft); max-width:460px; margin-bottom:34px;
+  }
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px;}
+  .hero-stats{display:flex; gap:38px; flex-wrap:wrap;}
+  .hero-stats div strong{
+    font-family:'Fraunces', serif; font-size:26px; display:block; font-weight:500;
+  }
+  .hero-stats div span{font-size:12.5px; color:var(--text-soft); letter-spacing:.03em;}
+
+  .hero-visual{position:relative; height:520px;}
+  .hv-card{
+    position:absolute; border-radius:var(--radius-lg); box-shadow:var(--shadow);
+    background:var(--surface); border:1px solid var(--line); overflow:hidden;
+  }
+  .hv-card.main{
+    width:78%; height:88%; top:0; right:0; z-index:1;
+  }
+  .hv-card.float{
+    width:180px; padding:16px; left:-6px; bottom:18px; z-index:4;
+    display:flex; gap:12px; align-items:center; background:var(--bg);
+  }
+  .hv-card.float .swatch{width:44px; height:44px; border-radius:50%; flex:none;
+    background:conic-gradient(from 180deg, var(--gold), var(--gold-light), var(--gold-deep), var(--gold));}
+  .hv-card.float b{display:block; font-size:13.5px;}
+  .hv-card.float span{font-size:11.5px; color:var(--text-soft);}
+  .hv-badge{
+    position:absolute; top:30px; left:2px; z-index:5; background:var(--ink); color:var(--cream-soft);
+    padding:11px 18px; border-radius:100px; font-size:12.5px; font-weight:700;
+    display:flex; align-items:center; gap:8px; box-shadow:var(--shadow);
+    white-space:nowrap;
+  }
+  [data-theme="dark"] .hv-badge{background:var(--gold); color:#1a1710;}
+
+  /* Illustrated product art (CSS, no external images) */
+  .art{width:100%; height:100%; position:relative; display:flex; align-items:center; justify-content:center;}
+  .art-tee{background:linear-gradient(160deg, #EFE6D2, #DCC79B);}
+  .art-hoodie{background:linear-gradient(160deg, #E3D3AE, #B08D57);}
+  .art-mug{background:linear-gradient(160deg, #F3ECDA, #C9AD79);}
+  .art-tote{background:linear-gradient(160deg, #EAD9AE, #9C7A45);}
+  .art-cap{background:linear-gradient(160deg, #EFE6D2, #C7A468);}
+  .art-bottle{background:linear-gradient(160deg, #E9DCC0, #B79358);}
+  .art svg{width:46%; height:46%; opacity:.92;}
+
+  /* ===== Section heading ===== */
+  .sec-head{display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:44px; flex-wrap:wrap;}
+  .sec-head h2{font-size:clamp(28px,3.4vw,40px); font-weight:500; margin-top:14px; max-width:600px;}
+  .sec-head p{color:var(--text-soft); font-size:15px; max-width:360px; line-height:1.6;}
+  .see-all{font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px; white-space:nowrap;}
+  .see-all svg{width:15px; height:15px; transition:transform .2s ease;}
+  .see-all:hover svg{transform:translateX(4px);}
+
+  /* ===== Categories ===== */
+  .categories{padding:88px 0;}
+  .cat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .cat-card{
+    border-radius:var(--radius-lg); border:1px solid var(--line); background:var(--surface);
+    padding:34px 28px; height:340px; display:flex; flex-direction:column; justify-content:space-between;
+    position:relative; overflow:hidden; transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .cat-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
+  .cat-card .cat-icon{
+    width:56px; height:56px; border-radius:50%; background:var(--bg); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .cat-card .cat-icon svg{width:26px; height:26px; stroke:var(--gold-deep);}
+  [data-theme="dark"] .cat-card .cat-icon svg{stroke:var(--gold);}
+  .cat-card h3{font-family:'Fraunces', serif; font-size:25px; font-weight:500; margin-bottom:8px;}
+  .cat-card p{font-size:13.5px; color:var(--text-soft); margin-bottom:16px;}
+  .cat-card .cat-link{font-size:13.5px; font-weight:700; display:inline-flex; align-items:center; gap:6px;}
+  .cat-card .cat-link svg{width:14px; height:14px;}
+  .cat-card::after{
+    content:""; position:absolute; width:220px; height:220px; border-radius:50%;
+    border:1px solid var(--line); right:-90px; bottom:-90px; opacity:.6;
+  }
+
+  /* ===== Products ===== */
+  .products{padding:88px 0; background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .tab-row{display:flex; gap:10px; margin-bottom:40px; flex-wrap:wrap;}
+  .tab{
+    padding:9px 18px; border-radius:100px; border:1px solid var(--line); font-size:13.5px; font-weight:700;
+    color:var(--text-soft); transition:all .2s ease;
+  }
+  .tab.active, .tab:hover{background:var(--ink); color:var(--cream-soft); border-color:var(--ink);}
+  [data-theme="dark"] .tab.active, [data-theme="dark"] .tab:hover{background:var(--gold); color:#1a1710; border-color:var(--gold);}
+  .prod-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  .prod-card{
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--radius-md); overflow:hidden;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .prod-card:hover{transform:translateY(-5px); box-shadow:var(--shadow-sm);}
+  .prod-thumb{height:210px; position:relative;}
+  .prod-tag{
+    position:absolute; top:12px; left:12px; background:var(--ink); color:var(--cream-soft);
+    font-size:10.5px; font-weight:700; letter-spacing:.03em; padding:5px 10px; border-radius:100px;
+  }
+  [data-theme="dark"] .prod-tag{background:var(--gold); color:#1a1710;}
+  .prod-heart{
+    position:relative; width:32px; height:32px; border-radius:50%;
+    background:rgba(255,255,255,.85); display:flex; align-items:center; justify-content:center;
+    transition:transform .2s ease;
+  }
+  .prod-heart svg{width:16px; height:16px; stroke:var(--ink); fill:none; transition:fill .2s ease, stroke .2s ease;}
+  .prod-heart.active svg{fill:var(--gold-deep); stroke:var(--gold-deep);}
+  .prod-heart:hover{transform:scale(1.1);}
+  .prod-info{padding:16px 16px 18px;}
+  .prod-info .cat{font-size:11px; color:var(--text-soft); text-transform:uppercase; letter-spacing:.06em; font-weight:700;}
+  .prod-info h4{font-size:15.5px; font-weight:700; margin:5px 0 8px;}
+  .prod-info .price-row{display:flex; align-items:center; justify-content:space-between;}
+  .price{font-family:'Fraunces', serif; font-size:18px; font-weight:500;}
+  .price small{font-size:12.5px; color:var(--text-soft); text-decoration:line-through; font-weight:400; margin-left:6px;}
+  .stars{display:flex; gap:2px;}
+  .stars svg{width:11px; height:11px; fill:var(--gold);}
+
+  /* ===== Studio ===== */
+  .studio{padding:96px 0;}
+  .studio-grid{display:grid; grid-template-columns:.95fr 1.05fr; gap:64px; align-items:center;}
+  .steps{margin-top:34px; display:flex; flex-direction:column; gap:0;}
+  .step{display:flex; gap:20px; padding:22px 0; border-bottom:1px solid var(--line); position:relative;}
+  .step:last-child{border-bottom:none;}
+  .step-num{
+    font-family:'Fraunces', serif; font-size:15px; color:var(--gold-deep); font-weight:600;
+    width:40px; flex:none; padding-top:2px;
+  }
+  [data-theme="dark"] .step-num{color:var(--gold);}
+  .step h4{font-size:16.5px; font-weight:700; margin-bottom:6px;}
+  .step p{font-size:14px; color:var(--text-soft); line-height:1.6; max-width:400px;}
+
+  .studio-panel{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); overflow:hidden;
+  }
+  .panel-top{
+    display:flex; align-items:center; gap:8px; padding:14px 20px; border-bottom:1px solid var(--line);
+  }
+  .panel-dot{width:9px; height:9px; border-radius:50%; background:var(--line);}
+  .panel-top span{font-size:12px; color:var(--text-soft); margin-left:10px; font-weight:600;}
+  .panel-body{display:grid; grid-template-columns:1fr 200px; min-height:340px;}
+  .panel-canvas{
+    background:var(--bg); display:flex; align-items:center; justify-content:center; position:relative;
+    border-right:1px solid var(--line);
+  }
+  .panel-canvas .canvas-tee{width:58%; position:relative;}
+  .canvas-text{
+    position:absolute; top:38%; left:50%; transform:translate(-50%,-50%);
+    font-family:'Fraunces', serif; font-style:italic; font-size:15px; color:var(--gold-deep);
+    border:1.5px dashed var(--gold); padding:4px 10px; border-radius:6px; white-space:nowrap;
+  }
+  .panel-side{padding:18px; display:flex; flex-direction:column; gap:18px;}
+  .panel-block label{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-soft); font-weight:700; display:block; margin-bottom:9px;}
+  .swatch-row{display:flex; gap:8px;}
+  .swatch-row .sw{width:22px; height:22px; border-radius:50%; border:2px solid var(--bg); box-shadow:0 0 0 1px var(--line);}
+  .panel-price{margin-top:auto; padding-top:14px; border-top:1px solid var(--line);}
+  .panel-price .amt{font-family:'Fraunces', serif; font-size:22px; font-weight:500;}
+  .panel-price span{font-size:11.5px; color:var(--text-soft);}
+
+  /* ===== Collection banner ===== */
+  .collection{padding:0 0 96px;}
+  .collection-banner{
+    border-radius:var(--radius-lg); overflow:hidden; position:relative; min-height:400px;
+    display:flex; align-items:center; padding:60px;
+    background:linear-gradient(120deg, #2A2318 0%, #4A3B22 55%, #8C6D3F 100%);
+    color:var(--cream-soft);
+  }
+  .collection-banner::before{
+    content:""; position:absolute; inset:0; opacity:.12;
+    background-image:radial-gradient(circle at 20% 30%, #fff 0, transparent 40%), radial-gradient(circle at 80% 70%, #fff 0, transparent 35%);
+  }
+  .collection-banner .content{position:relative; max-width:480px;}
+  .collection-banner .eyebrow{color:var(--gold-light);}
+  .collection-banner .eyebrow::before{background:var(--gold-light);}
+  .collection-banner h2{font-size:clamp(30px,3.6vw,44px); font-weight:500; margin:16px 0 18px;}
+  .collection-banner p{color:#E7DCC4; font-size:15.5px; margin-bottom:28px; line-height:1.6;}
+  .collection-banner .cta-btn{background:var(--gold-light); color:#2A2318;}
+
+  /* ===== Testimonials ===== */
+  .testimonials{padding:88px 0; background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .test-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .test-card{
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--radius-md); padding:28px;
+    display:flex; flex-direction:column; gap:16px;
+  }
+  .test-card .stars svg{width:13px; height:13px;}
+  .test-card p{font-size:14.5px; line-height:1.65; color:var(--text-soft);}
+  .test-who{display:flex; align-items:center; gap:12px; margin-top:auto;}
+  .test-avatar{
+    width:38px; height:38px; border-radius:50%; background:var(--gold-light);
+    display:flex; align-items:center; justify-content:center; font-family:'Fraunces', serif; font-weight:600; color:var(--gold-deep);
+    flex:none;
+  }
+  .test-who b{font-size:13.5px; display:block;}
+  .test-who span{font-size:12px; color:var(--text-soft);}
+
+  /* ===== Instagram ===== */
+  .insta{padding:88px 0;}
+  .insta-grid{display:grid; grid-template-columns:repeat(6,1fr); gap:14px;}
+  .insta-tile{
+    aspect-ratio:1; border-radius:var(--radius-sm); position:relative; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .insta-tile svg{width:26px; height:26px; opacity:.75;}
+  .insta-tile::after{
+    content:""; position:absolute; inset:0; background:rgba(0,0,0,0); transition:background .25s ease;
+  }
+  .insta-tile:hover::after{background:rgba(0,0,0,.15);}
+
+  /* ===== Newsletter / trust ===== */
+  .trust{padding:0 0 96px;}
+  .trust-row{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-bottom:64px;
+  }
+  .trust-item{
+    display:flex; align-items:center; gap:14px; padding:20px; border:1px solid var(--line); border-radius:var(--radius-md);
+    background:var(--surface);
+  }
+  .trust-item svg{width:24px; height:24px; stroke:var(--gold-deep); flex:none;}
+  [data-theme="dark"] .trust-item svg{stroke:var(--gold);}
+  .trust-item b{font-size:13.5px; display:block;}
+  .trust-item span{font-size:11.5px; color:var(--text-soft);}
+
+  .newsletter{
+    border-radius:var(--radius-lg); border:1px solid var(--line); background:var(--surface);
+    padding:56px; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;
+  }
+  .newsletter h3{font-family:'Fraunces', serif; font-size:28px; font-weight:500; margin-bottom:8px;}
+  .newsletter p{color:var(--text-soft); font-size:14.5px; max-width:360px;}
+  .nl-form{display:flex; gap:10px; flex-wrap:wrap;}
+  .nl-form input{
+    background:var(--bg); border:1px solid var(--line); border-radius:100px; padding:13px 20px;
+    font-family:inherit; font-size:14px; color:var(--text); width:260px;
+  }
+  .nl-form input:focus{outline:2px solid var(--gold); outline-offset:1px;}
+
+  /* ===== Footer ===== */
+  footer{background:var(--ink); color:var(--cream-soft); padding:70px 0 0;}
+  [data-theme="dark"] footer{background:#0E0C09;}
+  .footer-top{
+    display:grid; grid-template-columns:1.4fr repeat(4,1fr); gap:40px; padding-bottom:56px;
+    border-bottom:1px solid rgba(246,241,231,.12);
+  }
+  .footer-brand .brand{margin-bottom:16px;}
+  .footer-brand p{color:#B7AC96; font-size:14px; line-height:1.65; max-width:280px; margin-bottom:20px;}
+  .social-row{display:flex; gap:10px;}
+  .social-row a{
+    width:36px; height:36px; border-radius:50%; border:1px solid rgba(246,241,231,.2);
+    display:flex; align-items:center; justify-content:center; transition:background .2s ease, border-color .2s ease;
+  }
+  .social-row a:hover{background:var(--gold); border-color:var(--gold);}
+  .social-row svg{width:15px; height:15px; stroke:var(--cream-soft);}
+  .foot-col h5{font-size:12.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--gold-light); margin-bottom:18px; font-weight:700;}
+  .foot-col ul{display:flex; flex-direction:column; gap:11px;}
+  .foot-col a{color:#C9BDA4; font-size:14px; transition:color .2s ease;}
+  .foot-col a:hover{color:var(--cream-soft);}
+  .footer-bottom{
+    display:flex; align-items:center; justify-content:space-between; padding:24px 0; flex-wrap:wrap; gap:14px;
+  }
+  .footer-bottom p{font-size:12.5px; color:#9C9075;}
+  .pay-icons{display:flex; gap:10px; align-items:center;}
+  .pay-icons span{
+    font-size:10.5px; font-weight:700; border:1px solid rgba(246,241,231,.2); border-radius:5px; padding:5px 8px; color:#C9BDA4;
+  }
+
+  /* ===== Overlay scrim (shared by search + drawers) ===== */
+  .scrim{
+    position:fixed; inset:0; background:rgba(15,12,8,.5); backdrop-filter:blur(3px);
+    opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:200;
+  }
+  .scrim.open{opacity:1; pointer-events:auto;}
+  body.no-scroll{overflow:hidden;}
+
+  /* ===== Search overlay ===== */
+  .search-overlay{
+    position:fixed; top:0; left:0; right:0; z-index:210;
+    display:flex; justify-content:center;
+    opacity:0; visibility:hidden; transform:translateY(-14px) scale(.98);
+    transition:opacity .28s ease, transform .28s ease, visibility 0s linear .28s;
+  }
+  .search-overlay.open{
+    opacity:1; visibility:visible; transform:translateY(0) scale(1);
+    transition:opacity .28s ease, transform .28s ease;
+  }
+  .search-panel{
+    width:100%; max-width:720px; margin-top:8vh; max-height:82vh;
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); display:flex; flex-direction:column; overflow:hidden;
+  }
+  .search-input-row{display:flex; align-items:center; gap:14px; padding:20px 22px; border-bottom:1px solid var(--line);}
+  .search-input-row svg{width:20px; height:20px; stroke:var(--text-soft); flex:none;}
+  #searchInput{
+    flex:1; border:none; background:none; font-family:'Fraunces', serif; font-size:20px;
+    color:var(--text); outline:none;
+  }
+  #searchInput::placeholder{color:var(--text-soft); opacity:.7;}
+  .search-close{
+    width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:var(--surface); flex:none;
+  }
+  .search-close svg{width:14px; height:14px; stroke:var(--text);}
+  .search-kbd{font-size:11px; color:var(--text-soft); border:1px solid var(--line); border-radius:5px; padding:2px 6px; flex:none;}
+  .search-body{overflow-y:auto; padding:20px 22px 26px;}
+  .search-section{margin-bottom:22px;}
+  .search-section:last-child{margin-bottom:0;}
+  .search-section h6{
+    font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-soft); font-weight:700;
+    margin-bottom:12px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .search-section h6 button{font-size:11px; font-weight:700; color:var(--gold-deep); text-transform:none; letter-spacing:0;}
+  .chip-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-size:13px; font-weight:600; padding:8px 14px; border-radius:100px; border:1px solid var(--line);
+    background:var(--surface); display:inline-flex; align-items:center; gap:6px; transition:border-color .2s ease, background .2s ease;
+  }
+  .chip:hover{border-color:var(--gold); background:var(--bg);}
+  .chip svg{width:12px; height:12px; stroke:var(--text-soft);}
+  .search-results{display:grid; grid-template-columns:repeat(2,1fr); gap:12px;}
+  .sr-card{
+    display:flex; gap:12px; padding:10px; border:1px solid var(--line); border-radius:var(--radius-sm);
+    background:var(--surface); position:relative; transition:border-color .2s ease, transform .2s ease;
+  }
+  .sr-card:hover{border-color:var(--gold); transform:translateY(-2px);}
+  .sr-thumb{width:56px; height:56px; border-radius:10px; flex:none; overflow:hidden;}
+  .sr-thumb .art svg{width:60%; height:60%;}
+  .sr-info{flex:1; min-width:0;}
+  .sr-info h5{font-size:13.5px; font-weight:700; margin-bottom:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .sr-info .sr-cat{font-size:11px; color:var(--text-soft);}
+  .sr-info .sr-price{font-family:'Fraunces', serif; font-size:14.5px; margin-top:4px;}
+  .sr-actions{position:absolute; top:8px; right:8px; display:flex; gap:6px;}
+  .sr-actions button{
+    width:26px; height:26px; border-radius:50%; background:var(--bg); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .sr-actions button svg{width:12px; height:12px; stroke:var(--text);}
+  .sr-actions button.js-wishlist-btn.active svg{fill:var(--gold-deep); stroke:var(--gold-deep);}
+  .search-empty{text-align:center; padding:30px 10px;}
+  .search-empty svg{width:44px; height:44px; stroke:var(--text-soft); margin-bottom:14px;}
+  .search-empty p{color:var(--text-soft); font-size:14.5px; margin-bottom:4px;}
+
+  /* ===== Slide-out drawers (wishlist / cart) ===== */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:420px; max-width:92vw; z-index:220;
+    background:color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter:blur(16px) saturate(140%);
+    border-left:1px solid var(--line); box-shadow:var(--shadow);
+    display:flex; flex-direction:column; transform:translateX(100%);
+    transition:transform .32s cubic-bezier(.22,1,.36,1);
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{
+    display:flex; align-items:center; justify-content:space-between; padding:22px 24px; border-bottom:1px solid var(--line);
+  }
+  .drawer-head h3{font-family:'Fraunces', serif; font-size:21px; font-weight:500; display:flex; align-items:center; gap:10px;}
+  .drawer-head h3 svg{width:19px; height:19px; stroke:var(--gold-deep);}
+  [data-theme="dark"] .drawer-head h3 svg{stroke:var(--gold);}
+  .drawer-head .count-pill{
+    font-size:11.5px; font-weight:700; background:var(--surface); border:1px solid var(--line);
+    padding:3px 9px; border-radius:100px; color:var(--text-soft);
+  }
+  .drawer-close{width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface);}
+  .drawer-close svg{width:14px; height:14px; stroke:var(--text);}
+  .drawer-body{flex:1; overflow-y:auto; padding:18px 24px;}
+  .drawer-empty{
+    height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:16px; padding:30px;
+  }
+  .drawer-empty svg{width:64px; height:64px; stroke:var(--line); stroke-width:1.2;}
+  .drawer-empty p{color:var(--text-soft); font-size:15px;}
+
+  .dline-item{display:flex; gap:14px; padding:16px 0; border-bottom:1px solid var(--line);}
+  .dline-thumb{width:74px; height:74px; border-radius:var(--radius-sm); flex:none; overflow:hidden;}
+  .dline-thumb .art svg{width:55%; height:55%;}
+  .dline-info{flex:1; min-width:0; display:flex; flex-direction:column; gap:4px;}
+  .dline-info h5{font-size:14.5px; font-weight:700;}
+  .dline-meta{font-size:12px; color:var(--text-soft);}
+  .dline-price{font-family:'Fraunces', serif; font-size:15px; margin-top:2px;}
+  .dline-row{display:flex; align-items:center; justify-content:space-between; margin-top:auto; gap:8px;}
+  .qty-stepper{display:flex; align-items:center; gap:0; border:1px solid var(--line); border-radius:100px; overflow:hidden;}
+  .qty-stepper button{width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px;}
+  .qty-stepper button:hover{background:var(--surface);}
+  .qty-stepper span{min-width:22px; text-align:center; font-size:13px; font-weight:700;}
+  .dline-actions{display:flex; gap:12px;}
+  .dline-actions button{font-size:12px; font-weight:700; color:var(--text-soft); display:flex; align-items:center; gap:4px;}
+  .dline-actions button:hover{color:var(--gold-deep);}
+  .dline-actions svg{width:13px; height:13px;}
+  .stock-pill{font-size:10.5px; font-weight:700; padding:2px 8px; border-radius:100px; display:inline-flex; width:fit-content;}
+  .stock-pill.in{color:#3E6B4F; background:rgba(62,107,79,.12);}
+  .stock-pill.low{color:#9C6B1B; background:rgba(156,107,27,.12);}
+
+  .drawer-summary{border-top:1px solid var(--line); padding:18px 24px 22px; flex:none;}
+  .sum-row{display:flex; align-items:center; justify-content:space-between; font-size:13.5px; color:var(--text-soft); margin-bottom:9px;}
+  .sum-row.total{color:var(--text); font-size:16px; font-weight:700; font-family:'Fraunces', serif; margin-top:12px; padding-top:12px; border-top:1px solid var(--line);}
+  .coupon-row{display:flex; gap:8px; margin:14px 0;}
+  .coupon-row input{
+    flex:1; background:var(--surface); border:1px solid var(--line); border-radius:100px; padding:9px 14px; font-size:13px; color:var(--text);
+  }
+  .coupon-row button{
+    font-size:12.5px; font-weight:700; padding:9px 16px; border-radius:100px; border:1px solid var(--line);
+  }
+  .coupon-row button:hover{border-color:var(--gold); background:var(--surface);}
+  .drawer-ctas{display:flex; flex-direction:column; gap:10px; margin-top:6px;}
+  .drawer-ctas .cta-btn, .drawer-ctas .cta-ghost{justify-content:center; width:100%;}
+
+  /* ===== Toasts ===== */
+  .toast-stack{
+    position:fixed; bottom:22px; right:22px; z-index:300; display:flex; flex-direction:column; gap:10px; max-width:340px;
+  }
+  .toast{
+    background:var(--ink); color:var(--cream-soft); border-radius:var(--radius-sm); padding:14px 16px;
+    display:flex; align-items:center; gap:12px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+    transform:translateX(120%); opacity:0; transition:transform .35s cubic-bezier(.22,1,.36,1), opacity .35s ease;
+  }
+  [data-theme="dark"] .toast{background:var(--surface); border:1px solid var(--line);}
+  .toast.show{transform:translateX(0); opacity:1;}
+  .toast .t-icon{width:20px; height:20px; flex:none; stroke:var(--gold-light);}
+  [data-theme="dark"] .toast .t-icon{stroke:var(--gold);}
+  .toast .t-text{font-size:13.5px; font-weight:600;}
+  .toast .t-bar{position:absolute; left:0; bottom:0; height:2.5px; background:var(--gold); animation:toast-bar 3.2s linear forwards;}
+  @keyframes toast-bar{ from{width:100%;} to{width:0%;} }
+
+  @media (max-width:640px){
+    .search-overlay{align-items:flex-end;}
+    .search-panel{max-width:100%; max-height:100%; height:100%; margin-top:0; border-radius:0;}
+    .search-results{grid-template-columns:1fr;}
+    .drawer{width:100%; max-width:100%; top:auto; bottom:0; height:88vh; border-left:none; border-top:1px solid var(--line);
+      border-radius:var(--radius-lg) var(--radius-lg) 0 0; transform:translateY(100%);}
+    .drawer.open{transform:translateY(0);}
+    .toast-stack{left:16px; right:16px; bottom:16px; max-width:none;}
+  }
+
+  @media (max-width:980px){
+    .nav-links{display:none;}
+    .hamburger{display:flex;}
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-visual{height:400px; order:-1;}
+    .cat-grid{grid-template-columns:1fr;}
+    .prod-grid{grid-template-columns:repeat(2,1fr);}
+    .studio-grid{grid-template-columns:1fr;}
+    .test-grid{grid-template-columns:1fr;}
+    .trust-row{grid-template-columns:repeat(2,1fr);}
+    .footer-top{grid-template-columns:repeat(2,1fr);}
+    .insta-grid{grid-template-columns:repeat(3,1fr);}
+    .panel-body{grid-template-columns:1fr;}
+    .panel-canvas{border-right:none; border-bottom:1px solid var(--line); min-height:220px;}
+    .collection-banner{padding:40px 28px;}
+  }
+  @media (max-width:600px){
+    .wrap{padding:0 20px;}
+    .nav-row{padding:14px 20px;}
+    .hero{padding:56px 0 60px;}
+    .prod-grid{grid-template-columns:1fr 1fr; gap:14px;}
+    .cta-btn, .cta-ghost{padding:11px 18px; font-size:13.5px;}
+    .newsletter{padding:32px 24px; flex-direction:column; align-items:flex-start;}
+    .nl-form{width:100%;}
+    .nl-form input{width:100%;}
+    .footer-top{grid-template-columns:1fr;}
+    .insta-grid{grid-template-columns:repeat(3,1fr); gap:8px;}
+    .hero-stats{gap:26px;}
+  }
+  a:focus-visible, button:focus-visible, input:focus-visible{
+    outline:2px solid var(--gold-deep); outline-offset:2px;
+  }
+  /* ======================================================================
+     SEARCH OVERLAY
+  ====================================================================== */
+  .search-overlay{
+    position:fixed; inset:0; z-index:300; display:flex; justify-content:center;
+    padding:10vh 20px 40px; overflow-y:auto;
+    background:rgba(22,19,15,0); backdrop-filter:blur(0px);
+    opacity:0; pointer-events:none; transition:opacity .3s ease, background .3s ease, backdrop-filter .3s ease;
+  }
+  .search-overlay.open{
+    opacity:1; pointer-events:auto; background:rgba(22,19,15,.45); backdrop-filter:blur(6px);
+  }
+  .search-panel{
+    width:100%; max-width:680px; max-height:78vh; background:var(--bg); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); border:1px solid var(--line); overflow:hidden; display:flex; flex-direction:column;
+    transform:translateY(-16px) scale(.97); opacity:0; transition:transform .32s cubic-bezier(.2,.8,.2,1), opacity .3s ease;
+  }
+  .search-overlay.open .search-panel{transform:translateY(0) scale(1); opacity:1;}
+  .search-input-row{display:flex; align-items:center; gap:14px; padding:20px 22px; border-bottom:1px solid var(--line); flex:none;}
+  .search-input-row svg{width:20px; height:20px; stroke:var(--text-soft); flex:none;}
+  #searchInput{
+    flex:1; border:none; outline:none; background:transparent; font-family:'Fraunces', serif;
+    font-size:20px; color:var(--text); font-style:italic;
+  }
+  #searchInput::placeholder{color:var(--text-soft); opacity:.7;}
+  .search-close{
+    width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:var(--surface); flex:none; transition:background .2s ease;
+  }
+  .search-close:hover{background:var(--gold-light);}
+  .search-close svg{width:15px; height:15px; stroke:var(--text);}
+  .search-kbd{
+    font-size:11px; border:1px solid var(--line); border-radius:6px; padding:2px 6px; color:var(--text-soft);
+    flex:none; font-family:'Manrope',sans-serif;
+  }
+  .search-body{overflow-y:auto; padding:20px 22px 26px;}
+  .search-section{margin-bottom:22px;}
+  .search-section:last-child{margin-bottom:0;}
+  .search-section h6{
+    font-size:11px; text-transform:uppercase; letter-spacing:.07em; color:var(--text-soft); font-weight:800;
+    margin-bottom:12px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .search-section h6 button{font-size:11px; font-weight:700; color:var(--gold-deep); text-transform:none; letter-spacing:0;}
+  [data-theme="dark"] .search-section h6 button{color:var(--gold);}
+  .chip-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    padding:8px 14px; border-radius:100px; border:1px solid var(--line); font-size:13px; font-weight:600;
+    display:flex; align-items:center; gap:6px; transition:border-color .2s ease, background .2s ease;
+  }
+  .chip:hover{border-color:var(--gold); background:var(--surface);}
+  .chip svg{width:12px; height:12px; stroke:var(--text-soft);}
+  .search-results{display:flex; flex-direction:column; gap:4px;}
+  .sr-card{
+    display:flex; align-items:center; gap:14px; padding:10px; border-radius:var(--radius-sm);
+    transition:background .18s ease; cursor:pointer;
+  }
+  .sr-card:hover, .sr-card:focus-visible{background:var(--surface);}
+  .sr-thumb{width:56px; height:56px; border-radius:12px; flex:none; display:flex; align-items:center; justify-content:center;}
+  .sr-thumb svg{width:26px; height:26px;}
+  .sr-info{flex:1; min-width:0;}
+  .sr-info .cat{font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-soft); font-weight:700;}
+  .sr-info h5{font-size:14.5px; font-weight:700; margin:2px 0 3px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .sr-meta{display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--text-soft);}
+  .sr-price{font-family:'Fraunces', serif; font-weight:600; color:var(--text);}
+  .sr-actions{display:flex; gap:6px; flex:none;}
+  .sr-actions button{
+    width:32px; height:32px; border-radius:50%; border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; transition:all .2s ease;
+  }
+  .sr-actions button:hover{border-color:var(--gold); background:var(--gold-light);}
+  .sr-actions svg{width:14px; height:14px; stroke:var(--text);}
+  .sr-actions .js-wishlist-btn.active svg{fill:var(--gold-deep); stroke:var(--gold-deep);}
+  .search-empty{text-align:center; padding:30px 10px;}
+  .search-empty svg{width:44px; height:44px; stroke:var(--text-soft); margin:0 auto 14px;}
+  .search-empty p{font-size:14.5px; color:var(--text-soft); margin-bottom:4px;}
+  .search-empty strong{font-family:'Fraunces', serif; font-size:19px; display:block; margin-bottom:6px;}
+
+  /* ======================================================================
+     DRAWERS (Wishlist / Cart)
+  ====================================================================== */
+  .drawer-scrim{
+    position:fixed; inset:0; z-index:290; background:rgba(22,19,15,0); backdrop-filter:blur(0px);
+    opacity:0; pointer-events:none; transition:opacity .3s ease, background .3s ease, backdrop-filter .3s ease;
+  }
+  .drawer-scrim.open{opacity:1; pointer-events:auto; background:rgba(22,19,15,.4); backdrop-filter:blur(4px);}
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(420px, 94vw); z-index:295;
+    background:var(--bg); border-left:1px solid var(--line); box-shadow:var(--shadow);
+    display:flex; flex-direction:column; transform:translateX(100%);
+    transition:transform .32s cubic-bezier(.2,.8,.2,1);
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{
+    display:flex; align-items:center; justify-content:space-between; padding:22px 24px; border-bottom:1px solid var(--line);
+    flex:none;
+  }
+  .drawer-head h3{font-family:'Fraunces', serif; font-size:22px; font-weight:500; display:flex; align-items:center; gap:10px;}
+  .drawer-head h3 svg{width:19px; height:19px; stroke:var(--gold-deep);}
+  [data-theme="dark"] .drawer-head h3 svg{stroke:var(--gold);}
+  .drawer-head .count-pill{
+    font-size:11.5px; background:var(--surface); border:1px solid var(--line); border-radius:100px; padding:2px 9px; font-weight:700;
+  }
+  .drawer-close{
+    width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface);
+  }
+  .drawer-close:hover{background:var(--gold-light);}
+  .drawer-close svg{width:15px; height:15px; stroke:var(--text);}
+  .drawer-body{flex:1; overflow-y:auto; padding:18px 24px;}
+  .drawer-empty{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+    height:100%; gap:16px; padding:40px 20px;
+  }
+  .drawer-empty svg{width:64px; height:64px; stroke:var(--text-soft); opacity:.5;}
+  .drawer-empty p{font-size:15px; color:var(--text-soft);}
+
+  .dr-item{display:flex; gap:14px; padding:16px 0; border-bottom:1px solid var(--line);}
+  .dr-item:last-child{border-bottom:none;}
+  .dr-thumb{width:74px; height:74px; border-radius:14px; flex:none; display:flex; align-items:center; justify-content:center;}
+  .dr-thumb svg{width:32px; height:32px;}
+  .dr-info{flex:1; min-width:0;}
+  .dr-info h5{font-size:14.5px; font-weight:700; margin-bottom:3px;}
+  .dr-attrs{display:flex; gap:8px; font-size:12px; color:var(--text-soft); margin-bottom:6px; flex-wrap:wrap;}
+  .dr-attrs span{border:1px solid var(--line); border-radius:6px; padding:1px 7px;}
+  .dr-bottom-row{display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;}
+  .dr-price{font-family:'Fraunces', serif; font-weight:600; font-size:15px;}
+  .qty-stepper{display:flex; align-items:center; gap:0; border:1px solid var(--line); border-radius:100px; overflow:hidden;}
+  .qty-stepper button{width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;}
+  .qty-stepper button:hover{background:var(--surface);}
+  .qty-stepper span{min-width:22px; text-align:center; font-size:13px; font-weight:700;}
+  .dr-actions-row{display:flex; align-items:center; gap:14px; margin-top:8px;}
+  .dr-link-btn{font-size:12px; font-weight:700; color:var(--text-soft); display:flex; align-items:center; gap:5px; transition:color .2s ease;}
+  .dr-link-btn:hover{color:var(--gold-deep);}
+  [data-theme="dark"] .dr-link-btn:hover{color:var(--gold);}
+  .dr-link-btn svg{width:13px; height:13px;}
+  .stock-ok{color:#5B7A52;}
+  [data-theme="dark"] .stock-ok{color:#8FBF80;}
+  .stock-low{color:#B0742A;}
+
+  .drawer-summary{border-top:1px solid var(--line); padding:18px 24px 24px; flex:none;}
+  .sum-row{display:flex; align-items:center; justify-content:space-between; font-size:13.5px; color:var(--text-soft); margin-bottom:9px;}
+  .sum-row.total{font-size:16px; font-weight:800; color:var(--text); margin-top:12px; padding-top:12px; border-top:1px dashed var(--line);}
+  .coupon-row{display:flex; gap:8px; margin:14px 0;}
+  .coupon-row input{
+    flex:1; background:var(--surface); border:1px solid var(--line); border-radius:100px; padding:9px 16px; font-size:13px; font-family:inherit; color:var(--text);
+  }
+  .coupon-row button{
+    padding:9px 16px; border-radius:100px; border:1px solid var(--line); font-size:12.5px; font-weight:700; white-space:nowrap;
+  }
+  .coupon-row button:hover{border-color:var(--gold); background:var(--gold-light);}
+  .drawer-cta-row{display:flex; flex-direction:column; gap:10px; margin-top:14px;}
+  .drawer-cta-row .cta-btn{justify-content:center; width:100%;}
+  .drawer-cta-row .cta-ghost{justify-content:center; width:100%;}
+
+  /* ======================================================================
+     TOASTS
+  ====================================================================== */
+  .toast-stack{
+    position:fixed; bottom:22px; right:22px; z-index:400; display:flex; flex-direction:column-reverse; gap:10px;
+    max-width:340px;
+  }
+  .toast{
+    background:var(--ink); color:var(--cream-soft); border-radius:14px; padding:13px 16px; box-shadow:var(--shadow);
+    display:flex; align-items:center; gap:12px; overflow:hidden; position:relative;
+    transform:translateX(120%); opacity:0; transition:transform .35s cubic-bezier(.2,.8,.2,1), opacity .3s ease;
+  }
+  [data-theme="dark"] .toast{background:#2B2519;}
+  .toast.show{transform:translateX(0); opacity:1;}
+  .toast .t-icon{width:20px; height:20px; flex:none; stroke:var(--gold-light);}
+  .toast p{font-size:13.5px; font-weight:600; line-height:1.4;}
+  .toast .t-bar{position:absolute; left:0; bottom:0; height:2.5px; background:var(--gold); width:100%; transform-origin:left;}
+  @media (prefers-reduced-motion: no-preference){
+    .toast .t-bar.run{animation:toast-run linear forwards;}
+  }
+  @keyframes toast-run{ from{transform:scaleX(1);} to{transform:scaleX(0);} }
+
+  /* Focus trap helper: hide visually-focusless outlines only when not using keyboard */
+  .search-panel, .drawer{outline:none;}
+
+  @media (max-width:640px){
+    .search-overlay{padding:0;}
+    .search-panel{max-width:100%; max-height:100%; height:100%; border-radius:0;}
+    .drawer{width:100%;}
+    .toast-stack{left:12px; right:12px; bottom:12px; max-width:none;}
+  }
+</style>
+</head>
+<body data-theme="light">
+
+<!-- ===== Utility bar ===== -->
+<div class="utility-bar">
+  <div class="wrap"><span><strong>Free shipping</strong> on orders above ₹999 · Design your own merch in minutes ✦</span></div>
+</div>
+
+<!-- ===== Nav ===== -->
+<header class="site-nav">
+  <div class="nav-row wrap">
+    <a href="#" class="brand" aria-label="RAUNA home">
+      <img src="data:image/jpeg;base64,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" alt="RAUNA emblem">
+      <span class="wordmark">RAUNA</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#categories">Shop</a>
+      <a href="#studio">Custom Studio</a>
+      <a href="#collection">Collections</a>
+      <a href="#products">Best Sellers</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" style="display:none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn" id="searchIcon" aria-label="Open search" aria-haspopup="dialog" aria-expanded="false" aria-controls="searchOverlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      <button class="icon-btn" id="wishlistIcon" aria-label="Open wishlist" aria-haspopup="dialog" aria-expanded="false" aria-controls="wishlistDrawer"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg><span class="count-badge" id="wishlistCount" hidden>0</span></button>
+      <button class="icon-btn" id="cartIcon" aria-label="Open cart" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg><span class="count-badge" id="cartCount" hidden>0</span></button>
+      <a href="#" class="cta-btn">Start Designing</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#categories">Shop</a>
+    <a href="#studio">Custom Studio</a>
+    <a href="#collection">Collections</a>
+    <a href="#products">Best Sellers</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#" class="cta-btn" style="justify-content:center; margin-top:12px;">Start Designing</a>
+  </div>
+</header>
+
+<!-- ===== Marquee ===== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Tees</span><span>Hoodies</span><span>Jerseys</span><span>Mugs</span><span>Tote Bags</span><span>Caps</span><span>Phone Covers</span><span>Sippers</span>
+    <span>Tees</span><span>Hoodies</span><span>Jerseys</span><span>Mugs</span><span>Tote Bags</span><span>Caps</span><span>Phone Covers</span><span>Sippers</span>
+  </div>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Ready-to-wear &amp; Made-to-order</p>
+      <h1 class="display">Wear what<br>you <em>design.</em></h1>
+      <p class="lead">RAUNA is a premium fashion &amp; lifestyle label from India — pick a piece from the edit, or build your own from scratch with our live customization studio.</p>
+      <div class="hero-ctas">
+        <a href="#products" class="cta-btn">
+          Shop the Edit
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#studio" class="cta-ghost">Start Designing</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong class="display">40k+</strong><span>Designs created</span></div>
+        <div><strong class="display">18</strong><span>Product categories</span></div>
+        <div><strong class="display">4.8★</strong><span>Average rating</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-badge">
+        <span class="mark spin-slow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg>
+        </span>
+        100% Customizable
+      </div>
+      <div class="hv-card main">
+        <div class="art art-hoodie">
+          <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M30 24 20 30l4 12 6-3v37h40V39l6 3 4-12-10-6-8 6H38l-8-6Z"/>
+            <path d="M40 24c1 5 5 8 10 8s9-3 10-8" />
+          </svg>
+        </div>
+      </div>
+      <div class="hv-card float">
+        <div class="swatch"></div>
+        <div>
+          <b>Custom Hoodie</b>
+          <span>from ₹1,499 · 6 colours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Categories ===== -->
+<section class="categories" id="categories">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Shop by category</p>
+        <h2 class="display">Two ways to make it yours.</h2>
+      </div>
+      <p>Pick a ready-made favourite, or hand us a blank canvas — every piece in the RAUNA edit can be customized.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card reveal">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4 5 7l3 3 2-1.5V21h4V8.5L16 10l3-3-3-3-3.5 2h-3L8 4Z"/></svg></div>
+        <div>
+          <h3 class="display">Clothing</h3>
+          <p>Tees, hoodies, jerseys, joggers &amp; more — in fits made for everyday wear.</p>
+        </div>
+        <a href="#" class="cat-link">Explore Clothing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="12" height="12" rx="1.5"/><path d="M8 8V6a4 4 0 0 1 8 0v2M16 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2"/></svg></div>
+        <div>
+          <h3 class="display">Accessories</h3>
+          <p>Mugs, tote bags, caps, phone covers &amp; sippers to round out your set.</p>
+        </div>
+        <a href="#" class="cat-link">Explore Accessories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="5"/></svg></div>
+        <div>
+          <h3 class="display">Custom Studio</h3>
+          <p>Upload art, add text, pick colours, and preview your design in real time.</p>
+        </div>
+        <a href="#studio" class="cat-link">Start Designing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Products ===== -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Trending now</p>
+        <h2 class="display">Fresh off the design table.</h2>
+      </div>
+      <a href="#" class="see-all">View all products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="tab-row reveal">
+      <button class="tab active">All</button>
+      <button class="tab">Clothing</button>
+      <button class="tab">Accessories</button>
+      <button class="tab">New Arrivals</button>
+      <button class="tab">Best Sellers</button>
+    </div>
+    <div class="prod-grid" id="prodGrid">
+
+      <div class="prod-card reveal" data-id="p1">
+        <div class="prod-thumb">
+          <div class="art art-tee"><svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 22 20 28l5 13 7-4v39h36V37l7 4 5-13-12-6-9 6H41l-9-6Z"/></svg></div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p1" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p1" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Oversized Tee</span>
+          <h4>Ink Bloom Oversized Tee</h4>
+          <div class="price-row">
+            <span class="price">₹699 <small>₹999</small></span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-id="p2">
+        <div class="prod-thumb">
+          <div class="art art-hoodie"><svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M30 24 20 30l4 12 6-3v37h40V39l6 3 4-12-10-6-8 6H38l-8-6Z"/><path d="M40 24c1 5 5 8 10 8s9-3 10-8"/></svg></div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p2" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p2" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Hoodie</span>
+          <h4>Brass Line Pullover Hoodie</h4>
+          <div class="price-row">
+            <span class="price">₹1,499</span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-id="p3">
+        <div class="prod-thumb">
+          <div class="art art-mug">
+            <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M28 30h34v34a8 8 0 0 1-8 8H36a8 8 0 0 1-8-8V30Z"/><path d="M62 38h8a8 8 0 0 1 0 16h-8"/></svg>
+          </div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p3" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p3" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Coffee Mug</span>
+          <h4>Golden Hour Photo Mug</h4>
+          <div class="price-row">
+            <span class="price">₹349</span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-id="p4">
+        <div class="prod-thumb">
+          <div class="art art-tote">
+            <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M30 34h40l4 46H26l4-46Z"/><path d="M38 34v-8a12 12 0 0 1 24 0v8"/></svg>
+          </div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p4" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p4" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Tote Bag</span>
+          <h4>Canvas Lotus Tote</h4>
+          <div class="price-row">
+            <span class="price">₹549</span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-id="p5">
+        <div class="prod-thumb">
+          <div class="art art-cap">
+            <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 56c0-16 13-29 30-29s30 13 30 29"/><path d="M20 56h60l6 8H14l6-8Z"/></svg>
+          </div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p5" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p5" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Cap</span>
+          <h4>Embroidered Wordmark Cap</h4>
+          <div class="price-row">
+            <span class="price">₹449</span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-id="p6">
+        <div class="prod-thumb">
+          <div class="art art-bottle">
+            <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="38" y="16" width="24" height="10" rx="2"/><path d="M34 30c0-2 2-4 4-4h24c2 0 4 2 4 4v46a8 8 0 0 1-8 8H42a8 8 0 0 1-8-8V30Z"/></svg>
+          </div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p6" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p6" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Water Bottle</span>
+          <h4>Matte Steel Sipper Bottle</h4>
+          <div class="price-row">
+            <span class="price">₹599</span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-id="p7">
+        <div class="prod-thumb">
+          <div class="art art-tee"><svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 22 20 28l5 13 7-4v39h36V37l7 4 5-13-12-6-9 6H41l-9-6Z"/></svg></div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p7" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p7" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Polo Tee</span>
+          <h4>Classic Weave Polo</h4>
+          <div class="price-row">
+            <span class="price">₹799</span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card reveal" data-id="p8">
+        <div class="prod-thumb">
+          <div class="art art-mug">
+            <svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="28" width="48" height="34" rx="4"/><path d="M30 62c0 6 4 10 10 10h20c6 0 10-4 10-10"/></svg>
+          </div>
+          <span class="prod-tag">Customizable</span>
+          <div class="thumb-actions">
+            <button class="prod-heart js-wishlist-btn" data-id="p8" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg></button>
+            <button class="prod-bag js-quickadd-btn" data-id="p8" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg></button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <span class="cat">Phone Cover</span>
+          <h4>Etched Lotus Phone Case</h4>
+          <div class="price-row">
+            <span class="price">₹399</span>
+            <span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Custom Studio ===== -->
+<section class="studio" id="studio">
+  <div class="wrap">
+    <div class="studio-grid">
+      <div class="reveal">
+        <p class="eyebrow">The Custom Design Studio</p>
+        <h2 class="display" style="font-size:clamp(28px,3.4vw,40px); margin-top:14px;">From blank canvas to doorstep in four steps.</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <div><h4>Pick your base</h4><p>Choose a product, colour, and size — every silhouette in the RAUNA edit is studio-ready.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <div><h4>Design it live</h4><p>Upload art, add text, pick fonts and colours, then drag, resize, layer and rotate until it's right.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <div><h4>Preview in real time</h4><p>See an AI-generated mockup from the front, back, sleeve and full 360° view before you commit.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">04</span>
+            <div><h4>Save, share, or order</h4><p>Save the design to your account, share it with friends, or send it straight to checkout.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-panel reveal">
+        <div class="panel-top">
+          <span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span>
+          <span>Design Studio — Preview</span>
+        </div>
+        <div class="panel-body">
+          <div class="panel-canvas">
+            <div class="canvas-tee">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-soft); opacity:.55;">
+                <path d="M32 22 20 28l5 13 7-4v39h36V37l7 4 5-13-12-6-9 6H41l-9-6Z"/>
+              </svg>
+              <span class="canvas-text">Your Text Here</span>
+            </div>
+          </div>
+          <div class="panel-side">
+            <div class="panel-block">
+              <label>Colour</label>
+              <div class="swatch-row">
+                <div class="sw" style="background:#211D18"></div>
+                <div class="sw" style="background:#B08D57"></div>
+                <div class="sw" style="background:#F6F1E7; box-shadow:0 0 0 1px var(--line), 0 0 0 3px var(--bg);"></div>
+                <div class="sw" style="background:#5C5346"></div>
+              </div>
+            </div>
+            <div class="panel-block">
+              <label>Size</label>
+              <div class="swatch-row" style="gap:6px;">
+                <span style="font-size:11.5px; border:1px solid var(--line); border-radius:6px; padding:4px 8px;">S</span>
+                <span style="font-size:11.5px; border:1.5px solid var(--gold); border-radius:6px; padding:4px 8px; font-weight:700;">M</span>
+                <span style="font-size:11.5px; border:1px solid var(--line); border-radius:6px; padding:4px 8px;">L</span>
+                <span style="font-size:11.5px; border:1px solid var(--line); border-radius:6px; padding:4px 8px;">XL</span>
+              </div>
+            </div>
+            <div class="panel-price">
+              <span>Live price</span>
+              <div class="amt">₹899</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Collection banner ===== -->
+<section class="collection" id="collection">
+  <div class="wrap">
+    <div class="collection-banner reveal">
+      <div class="content">
+        <p class="eyebrow">Limited collection</p>
+        <h2 class="display">The Monsoon Edit</h2>
+        <p>Earth-toned essentials built for layering — twelve pieces, each customizable, each made to move with you through the season.</p>
+        <a href="#products" class="cta-btn">Shop the Edit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="testimonials" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Loved by 12,000+ customers</p>
+        <h2 class="display">What people are saying.</h2>
+      </div>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <span class="stars">
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+        </span>
+        <p>"Designed a hoodie for my college fest in ten minutes flat. The preview matched exactly what showed up at my door."</p>
+        <div class="test-who">
+          <div class="test-avatar">A</div>
+          <div><b>Aarav Mehta</b><span>Pune</span></div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <span class="stars">
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+        </span>
+        <p>"Fabric quality feels premium, not print-shop. Ordered mugs for our whole team and every one arrived perfectly centered."</p>
+        <div class="test-who">
+          <div class="test-avatar">S</div>
+          <div><b>Sana Kapoor</b><span>Mumbai</span></div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <span class="stars">
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+          <svg viewBox="0 0 20 20" fill="none" stroke="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>
+        </span>
+        <p>"Tote bag design tool is genuinely fun to use — I made three versions before landing on the one I ordered."</p>
+        <div class="test-who">
+          <div class="test-avatar">R</div>
+          <div><b>Rohan Iyer</b><span>Bengaluru</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Instagram ===== -->
+<section class="insta">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Follow along</p>
+        <h2 class="display">@raunacollections</h2>
+      </div>
+      <a href="https://www.instagram.com/raunacollections/" target="_blank" rel="noopener" class="see-all">Follow on Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="insta-grid reveal">
+      <div class="insta-tile art-tee"><svg viewBox="0 0 24 24" fill="none" stroke="#3b2f1c" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+      <div class="insta-tile art-hoodie"><svg viewBox="0 0 24 24" fill="none" stroke="#3b2f1c" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+      <div class="insta-tile art-mug"><svg viewBox="0 0 24 24" fill="none" stroke="#3b2f1c" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+      <div class="insta-tile art-tote"><svg viewBox="0 0 24 24" fill="none" stroke="#3b2f1c" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+      <div class="insta-tile art-cap"><svg viewBox="0 0 24 24" fill="none" stroke="#3b2f1c" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+      <div class="insta-tile art-bottle"><svg viewBox="0 0 24 24" fill="none" stroke="#3b2f1c" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust + newsletter ===== -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-row reveal">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="14" height="11" rx="1.5"/><path d="M16 10h3l3 3v5h-6"/><circle cx="7" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
+        <div><b>Cash on delivery</b><span>Available pan-India</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><path d="m8.5 12 2.3 2.3L16 9"/></svg>
+        <div><b>Secure payments</b><span>Razorpay, Stripe, UPI</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6l2-3 4 6 2-3h4"/><circle cx="12" cy="12" r="10"/></svg>
+        <div><b>Fast dispatch</b><span>2–5 day delivery</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5M20 12a8 8 0 0 1-14 5"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+        <div><b>Easy returns</b><span>7-day exchange window</span></div>
+      </div>
+    </div>
+
+    <div class="newsletter reveal">
+      <div>
+        <h3 class="display">Get 10% off your first design.</h3>
+        <p>New drops, studio features, and the odd behind-the-scenes look at how RAUNA gets made — straight to your inbox.</p>
+      </div>
+      <form class="nl-form" onsubmit="return false;">
+        <input type="email" placeholder="you@email.com" aria-label="Email address" required>
+        <button type="submit" class="cta-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <img src="data:image/jpeg;base64,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" alt="RAUNA emblem">
+          <span class="wordmark">RAUNA</span>
+        </a>
+        <p>A modern fashion &amp; lifestyle label — ready-to-wear pieces and made-to-order merch, designed by you.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/people/Rauna-Collection/61575794769017/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M15 8h2V4h-2a4 4 0 0 0-4 4v3H8v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1Z"/></svg></a>
+          <a href="https://www.instagram.com/raunacollections/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 20l1.4-4A8 8 0 1 1 9 19l-5 1Z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#studio">Custom Studio</a></li>
+          <li><a href="#collection">Collections</a></li>
+          <li><a href="#">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Size Guide</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Account</h5>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">My Orders</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 RAUNA Collection. All rights reserved.</p>
+      <div class="pay-icons">
+        <span>UPI</span><span>Razorpay</span><span>Visa</span><span>Mastercard</span><span>COD</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Shared scrim for search + drawers ===== -->
+<div class="scrim" id="scrim"></div>
+
+<!-- ===== Search overlay ===== -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search RAUNA">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Search products, collections, categories…" autocomplete="off" aria-label="Search products">
+      <span class="search-kbd">Esc</span>
+      <button class="search-close" id="searchClose" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="search-body" id="searchBody"><!-- populated by search.js --></div>
+  </div>
+</div>
+
+<!-- ===== Wishlist drawer ===== -->
+<aside class="drawer" id="wishlistDrawer" role="dialog" aria-modal="true" aria-label="Wishlist">
+  <div class="drawer-head">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg>Wishlist <span class="count-pill" id="wishlistCountPill">0 items</span></h3>
+    <button class="drawer-close" id="wishlistClose" aria-label="Close wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="drawer-body" id="wishlistBody"><!-- populated by wishlist.js --></div>
+</aside>
+
+<!-- ===== Cart drawer ===== -->
+<aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg>Cart <span class="count-pill" id="cartCountPill">0 items</span></h3>
+    <button class="drawer-close" id="cartClose" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="drawer-body" id="cartBody"><!-- populated by cart.js --></div>
+  <div class="drawer-summary" id="cartSummary" hidden>
+    <div class="sum-row"><span>Subtotal</span><span id="sumSubtotal">₹0</span></div>
+    <div class="sum-row"><span>You save</span><span id="sumSavings">₹0</span></div>
+    <div class="sum-row"><span>Shipping</span><span id="sumShipping">₹0</span></div>
+    <div class="sum-row"><span>GST (5%)</span><span id="sumGst">₹0</span></div>
+    <div class="coupon-row">
+      <input type="text" id="couponInput" placeholder="Coupon code" aria-label="Coupon code">
+      <button id="couponApply">Apply</button>
+    </div>
+    <div class="sum-row total"><span>Grand Total</span><span id="sumTotal">₹0</span></div>
+    <div class="drawer-ctas">
+      <button class="cta-btn" id="checkoutBtn">Checkout</button>
+      <button class="cta-ghost" id="continueShoppingBtn">Continue Shopping</button>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== Toast stack ===== -->
+<div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+
+<script>
+  // Theme toggle — in-memory only (no storage), defaults to system preference
+  const root = document.body;
+  const sunIcon = document.getElementById('iconSun');
+  const moonIcon = document.getElementById('iconMoon');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+  syncIcons();
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    syncIcons();
+  });
+  function syncIcons(){
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    sunIcon.style.display = isDark ? 'none' : 'block';
+    moonIcon.style.display = isDark ? 'block' : 'none';
+  }
+
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobilePanel = document.getElementById('mobilePanel');
+  hamburger.addEventListener('click', () => mobilePanel.classList.toggle('open'));
+  mobilePanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobilePanel.classList.remove('open')));
+
+  // Product tabs (visual only)
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+<script>
+/* ==========================================================================
+   RAUNA storefront scripts — combined into one file for zero-dependency
+   deployment (no js/ folder required; this file is fully self-contained).
+   Sections below correspond 1:1 to the original modular files:
+   utils.js, storage.js, products.js, animations.js, toast.js,
+   wishlist.js, cart.js, search.js, navbar.js, main.js
+   ========================================================================== */
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/utils.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * utils.js
+ * ------------------------------------------------------------------
+ * Small, dependency-free helper functions shared by every other
+ * RAUNA storefront module (search, cart, wishlist, toast, etc).
+ * Everything is attached to a single global namespace, `RAUNA`,
+ * so plain <script> tags can share state without a bundler.
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.Utils = (function () {
+
+  /** Debounce: waits `delay` ms after the last call before firing `fn`. */
+  function debounce(fn, delay) {
+    let timer = null;
+    return function debounced(...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn.apply(this, args), delay);
+    };
+  }
+
+  /** Formats a number as Indian Rupees, e.g. 1499 -> "₹1,499". */
+  function formatINR(amount) {
+    const rounded = Math.round(amount);
+    return '₹' + rounded.toLocaleString('en-IN');
+  }
+
+  /** Escapes user-generated text before it is dropped into innerHTML. */
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = String(str ?? '');
+    return div.innerHTML;
+  }
+
+  /**
+   * Classic Levenshtein edit-distance between two strings.
+   * Used to give the search bar typo tolerance (e.g. "hodie" -> "hoodie").
+   */
+  function levenshtein(a, b) {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    const m = a.length, n = b.length;
+    if (m === 0) return n;
+    if (n === 0) return m;
+    const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+    for (let i = 0; i <= m; i++) dp[i][0] = i;
+    for (let j = 0; j <= n; j++) dp[0][j] = j;
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        dp[i][j] = Math.min(
+          dp[i - 1][j] + 1,      // deletion
+          dp[i][j - 1] + 1,      // insertion
+          dp[i - 1][j - 1] + cost // substitution
+        );
+      }
+    }
+    return dp[m][n];
+  }
+
+  /**
+   * Fuzzy "does query match this field" test with typo tolerance.
+   * Returns a match score (higher = better) or 0 for no match.
+   * - Exact substring match scores highest.
+   * - Per-word fuzzy match (small edit distance) scores lower but still counts,
+   *   so "hodie" still finds "Hoodie" and "traking" still finds "tracking".
+   */
+  function fuzzyScore(fieldText, query) {
+    if (!fieldText || !query) return 0;
+    const field = String(fieldText).toLowerCase();
+    const q = query.trim().toLowerCase();
+    if (!q) return 0;
+
+    if (field.includes(q)) {
+      // Reward matches near the start of the field slightly more.
+      return field.startsWith(q) ? 100 : 70;
+    }
+
+    // Typo-tolerant word-by-word check.
+    const words = field.split(/[\s,/-]+/).filter(Boolean);
+    let best = 0;
+    for (const word of words) {
+      if (word.length < 3) continue;
+      const dist = levenshtein(word.slice(0, q.length + 2), q);
+      const tolerance = Math.max(1, Math.floor(q.length * 0.34)); // ~1 typo per 3 chars
+      if (dist <= tolerance) {
+        best = Math.max(best, 40 - dist * 5);
+      }
+    }
+    return best;
+  }
+
+  /** Clamp a number between min and max. */
+  function clamp(n, min, max) {
+    return Math.min(Math.max(n, min), max);
+  }
+
+  /** Generates a short unique id, e.g. for cart line items. */
+  function uid(prefix = 'id') {
+    return `${prefix}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 7)}`;
+  }
+
+  return { debounce, formatINR, escapeHtml, levenshtein, fuzzyScore, clamp, uid };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/storage.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * storage.js
+ * ------------------------------------------------------------------
+ * A tiny persistence + pub/sub layer used by cart.js and wishlist.js.
+ *
+ * IMPORTANT NOTE ON PERSISTENCE:
+ * This module *tries* real localStorage first, so that once this file
+ * is downloaded and opened/hosted outside of Claude.ai's in-browser
+ * preview sandbox, the cart and wishlist genuinely persist across
+ * page refreshes as requested in the spec.
+ *
+ * If localStorage is unavailable (blocked by a sandboxed preview,
+ * private-browsing mode, or disabled by the user), it automatically
+ * falls back to an in-memory store for the current session — so the
+ * UI never breaks, it just won't survive a hard refresh in that case.
+ *
+ * Every other module talks to `RAUNA.Storage`, never to
+ * `localStorage` directly — that keeps them swappable for a real
+ * backend/API later (see the `KEYS` map below for what you'd persist
+ * server-side instead).
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.Storage = (function () {
+
+  const KEYS = {
+    CART: 'rauna_cart',
+    WISHLIST: 'rauna_wishlist',
+    RECENT_SEARCHES: 'rauna_recent_searches',
+  };
+
+  const memoryStore = {};
+  const listeners = {}; // key -> [callback, ...]
+
+  function detectLocalStorage() {
+    try {
+      const testKey = '__rauna_test__';
+      window.localStorage.setItem(testKey, '1');
+      window.localStorage.removeItem(testKey);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  const hasLocalStorage = detectLocalStorage();
+
+  function get(key, fallback) {
+    if (hasLocalStorage) {
+      try {
+        const raw = window.localStorage.getItem(key);
+        return raw !== null ? JSON.parse(raw) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+    return key in memoryStore ? memoryStore[key] : fallback;
+  }
+
+  function set(key, value) {
+    if (hasLocalStorage) {
+      try {
+        window.localStorage.setItem(key, JSON.stringify(value));
+      } catch (e) {
+        /* storage full / blocked — fall through to memory copy below */
+      }
+    }
+    memoryStore[key] = value;
+    emit(key, value);
+  }
+
+  function on(key, callback) {
+    (listeners[key] = listeners[key] || []).push(callback);
+    return () => {
+      listeners[key] = (listeners[key] || []).filter((cb) => cb !== callback);
+    };
+  }
+
+  function emit(key, value) {
+    (listeners[key] || []).forEach((cb) => cb(value));
+  }
+
+  return { KEYS, get, set, on, usingLocalStorage: hasLocalStorage };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/products.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * products.js
+ * ------------------------------------------------------------------
+ * Realistic product catalog for the RAUNA storefront demo.
+ * In a real backend-connected build, `RAUNA.PRODUCTS` would instead
+ * be hydrated from an API response — every other module only reads
+ * from this array/lookup, so swapping the source later is a one-file change.
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+(function () {
+
+  // Inline line-art SVG paths, reused from the homepage's illustrated
+  // product cards so dynamically-rendered cards (search/cart/wishlist)
+  // stay visually identical to the rest of the site.
+  const ICONS = {
+    tee: '<path d="M32 22 20 28l5 13 7-4v39h36V37l7 4 5-13-12-6-9 6H41l-9-6Z"/>',
+    hoodie: '<path d="M30 24 20 30l4 12 6-3v37h40V39l6 3 4-12-10-6-8 6H38l-8-6Z"/><path d="M40 24c1 5 5 8 10 8s9-3 10-8"/>',
+    mug: '<path d="M28 30h34v34a8 8 0 0 1-8 8H36a8 8 0 0 1-8-8V30Z"/><path d="M62 38h8a8 8 0 0 1 0 16h-8"/>',
+    tote: '<path d="M30 34h40l4 46H26l4-46Z"/><path d="M38 34v-8a12 12 0 0 1 24 0v8"/>',
+    cap: '<path d="M20 56c0-16 13-29 30-29s30 13 30 29"/><path d="M20 56h60l6 8H14l6-8Z"/>',
+    bottle: '<rect x="38" y="16" width="24" height="10" rx="2"/><path d="M34 30c0-2 2-4 4-4h24c2 0 4 2 4 4v46a8 8 0 0 1-8 8H42a8 8 0 0 1-8-8V30Z"/>',
+  };
+
+  /** Returns the illustrated product-art HTML for any product object. */
+  function artHTML(product) {
+    const icon = ICONS[product.art] || ICONS.tee;
+    return `<div class="art art-${product.art}"><svg viewBox="0 0 100 100" fill="none" stroke="#3b2f1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${icon}</svg></div>`;
+  }
+
+  const PRODUCTS = [
+    {
+      id: 'p1', name: 'Ink Bloom Oversized Tee', category: 'Oversized Tee', collection: 'Everyday Edit',
+      brand: 'RAUNA', description: 'Heavyweight 240gsm cotton oversized tee with a hand-drawn ink bloom print.',
+      price: 699, mrp: 999, rating: 4.6, reviews: 214, stock: 'in',
+      colors: ['Ink Black', 'Bone White'], sizes: ['S', 'M', 'L', 'XL'],
+      tags: ['tee', 'oversized', 'streetwear', 'cotton', 'best seller'],
+      sku: 'RAU-TEE-001', art: 'tee', customizable: true, isNew: false, isBestseller: true,
+    },
+    {
+      id: 'p2', name: 'Brass Line Pullover Hoodie', category: 'Hoodie', collection: 'Monsoon Edit',
+      brand: 'RAUNA', description: 'Brushed fleece pullover hoodie with a minimal brass-line embroidery detail.',
+      price: 1499, mrp: 1499, rating: 4.8, reviews: 356, stock: 'in',
+      colors: ['Charcoal', 'Sand Gold'], sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+      tags: ['hoodie', 'pullover', 'winter', 'fleece', 'best seller'],
+      sku: 'RAU-HOD-002', art: 'hoodie', customizable: true, isNew: false, isBestseller: true,
+    },
+    {
+      id: 'p3', name: 'Golden Hour Photo Mug', category: 'Coffee Mug', collection: 'Studio Picks',
+      brand: 'RAUNA', description: 'Ceramic 325ml mug, dishwasher safe, printed with your own photo or design.',
+      price: 349, mrp: 349, rating: 4.5, reviews: 128, stock: 'in',
+      colors: ['White', 'Matte Black'], sizes: ['325ml'],
+      tags: ['mug', 'coffee', 'gift', 'ceramic', 'photo print'],
+      sku: 'RAU-MUG-003', art: 'mug', customizable: true, isNew: true, isBestseller: false,
+    },
+    {
+      id: 'p4', name: 'Canvas Lotus Tote', category: 'Tote Bag', collection: 'Studio Picks',
+      brand: 'RAUNA', description: '12oz heavyweight canvas tote with reinforced handles and the RAUNA lotus motif.',
+      price: 549, mrp: 549, rating: 4.7, reviews: 91, stock: 'low',
+      colors: ['Natural Canvas', 'Ink Black'], sizes: ['One Size'],
+      tags: ['tote', 'bag', 'canvas', 'everyday', 'eco'],
+      sku: 'RAU-TOT-004', art: 'tote', customizable: true, isNew: false, isBestseller: false,
+    },
+    {
+      id: 'p5', name: 'Embroidered Wordmark Cap', category: 'Cap', collection: 'Everyday Edit',
+      brand: 'RAUNA', description: 'Structured 6-panel cap with an embroidered RAUNA wordmark and adjustable strap.',
+      price: 449, mrp: 599, rating: 4.4, reviews: 76, stock: 'in',
+      colors: ['Black', 'Olive', 'Cream'], sizes: ['Free Size'],
+      tags: ['cap', 'headwear', 'embroidery', 'accessory'],
+      sku: 'RAU-CAP-005', art: 'cap', customizable: true, isNew: false, isBestseller: false,
+    },
+    {
+      id: 'p6', name: 'Matte Steel Sipper Bottle', category: 'Water Bottle', collection: 'Studio Picks',
+      brand: 'RAUNA', description: 'Double-wall insulated 750ml steel bottle, keeps drinks cold for 18 hours.',
+      price: 599, mrp: 799, rating: 4.6, reviews: 143, stock: 'in',
+      colors: ['Matte Steel', 'Sand Gold'], sizes: ['750ml'],
+      tags: ['bottle', 'sipper', 'steel', 'insulated', 'gym'],
+      sku: 'RAU-BOT-006', art: 'bottle', customizable: true, isNew: true, isBestseller: false,
+    },
+    {
+      id: 'p7', name: 'Classic Weave Polo', category: 'Polo Tee', collection: 'Everyday Edit',
+      brand: 'RAUNA', description: 'Breathable pique-knit polo with a tipped collar, built for everyday wear.',
+      price: 799, mrp: 799, rating: 4.3, reviews: 58, stock: 'in',
+      colors: ['Navy', 'Bone White', 'Ink Black'], sizes: ['S', 'M', 'L', 'XL'],
+      tags: ['polo', 'tee', 'collar', 'office casual'],
+      sku: 'RAU-POL-007', art: 'tee', customizable: false, isNew: false, isBestseller: false,
+    },
+    {
+      id: 'p8', name: 'Etched Lotus Phone Case', category: 'Phone Cover', collection: 'Studio Picks',
+      brand: 'RAUNA', description: 'Shock-resistant phone case with an etched lotus emblem, slim profile.',
+      price: 399, mrp: 399, rating: 4.2, reviews: 39, stock: 'in',
+      colors: ['Clear', 'Ink Black'], sizes: ['iPhone', 'Android'],
+      tags: ['phone case', 'accessory', 'etched', 'gift'],
+      sku: 'RAU-PHN-008', art: 'mug', customizable: true, isNew: true, isBestseller: false,
+    },
+    {
+      id: 'p9', name: 'Heavyweight Crew Sweatshirt', category: 'Sweatshirt', collection: 'Monsoon Edit',
+      brand: 'RAUNA', description: '400gsm loopback cotton crewneck sweatshirt with a raised RAUNA chest print.',
+      price: 1199, mrp: 1399, rating: 4.5, reviews: 64, stock: 'in',
+      colors: ['Charcoal', 'Bone White'], sizes: ['S', 'M', 'L', 'XL'],
+      tags: ['sweatshirt', 'crewneck', 'winter', 'cotton'],
+      sku: 'RAU-SWT-009', art: 'hoodie', customizable: true, isNew: true, isBestseller: false,
+    },
+    {
+      id: 'p10', name: 'Trail Track Joggers', category: 'Joggers', collection: 'Everyday Edit',
+      brand: 'RAUNA', description: 'Tapered fit joggers in brushed fleece with zip pockets and ribbed cuffs.',
+      price: 999, mrp: 1199, rating: 4.4, reviews: 47, stock: 'in',
+      colors: ['Charcoal', 'Ink Black'], sizes: ['S', 'M', 'L', 'XL'],
+      tags: ['joggers', 'trackpants', 'bottoms', 'athleisure'],
+      sku: 'RAU-JOG-010', art: 'tee', customizable: false, isNew: false, isBestseller: false,
+    },
+    {
+      id: 'p11', name: 'Canvas Lotus Keychain', category: 'Key Chain', collection: 'Studio Picks',
+      brand: 'RAUNA', description: 'Compact canvas-and-brass keychain with the RAUNA lotus emblem stamp.',
+      price: 199, mrp: 249, rating: 4.6, reviews: 22, stock: 'in',
+      colors: ['Natural Canvas'], sizes: ['One Size'],
+      tags: ['keychain', 'accessory', 'small gift'],
+      sku: 'RAU-KEY-011', art: 'tote', customizable: false, isNew: false, isBestseller: false,
+    },
+    {
+      id: 'p12', name: 'Enamel Wordmark Badge', category: 'Badge', collection: 'Studio Picks',
+      brand: 'RAUNA', description: 'Hard-enamel pin badge with the RAUNA wordmark, gold-plated finish.',
+      price: 149, mrp: 149, rating: 4.7, reviews: 18, stock: 'low',
+      colors: ['Gold'], sizes: ['One Size'],
+      tags: ['badge', 'pin', 'enamel', 'accessory'],
+      sku: 'RAU-BDG-012', art: 'mug', customizable: false, isNew: true, isBestseller: false,
+    },
+  ];
+
+  // O(1) lookup by id, used constantly by cart/wishlist rendering.
+  const BY_ID = {};
+  PRODUCTS.forEach((p) => (BY_ID[p.id] = p));
+
+  RAUNA.PRODUCTS = PRODUCTS;
+  RAUNA.getProduct = (id) => BY_ID[id] || null;
+  RAUNA.productArtHTML = artHTML;
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/animations.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * animations.js
+ * ------------------------------------------------------------------
+ * Small accessibility + motion helpers shared by the search overlay
+ * and the wishlist/cart drawers: focus trapping, scroll locking, and
+ * a couple of one-off DOM animation utilities.
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.A11y = (function () {
+
+  const FOCUSABLE_SELECTOR =
+    'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+
+  /** Returns all focusable elements inside a container, in DOM order. */
+  function getFocusable(container) {
+    return Array.from(container.querySelectorAll(FOCUSABLE_SELECTOR)).filter(
+      (el) => el.offsetParent !== null
+    );
+  }
+
+  /**
+   * Traps Tab/Shift+Tab focus inside `container` while it's open.
+   * Returns a cleanup function to call when the panel closes.
+   */
+  function trapFocus(container) {
+    function handleKeydown(e) {
+      if (e.key !== 'Tab') return;
+      const focusable = getFocusable(container);
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+    container.addEventListener('keydown', handleKeydown);
+    return () => container.removeEventListener('keydown', handleKeydown);
+  }
+
+  let scrollLockCount = 0;
+  function lockScroll() {
+    scrollLockCount++;
+    document.body.classList.add('no-scroll');
+  }
+  function unlockScroll() {
+    scrollLockCount = Math.max(0, scrollLockCount - 1);
+    if (scrollLockCount === 0) document.body.classList.remove('no-scroll');
+  }
+
+  /** Briefly adds a bump/pop animation class, then removes it (retriggerable). */
+  function bump(el) {
+    if (!el) return;
+    el.classList.remove('bump');
+    // Force reflow so the animation can restart if it was already applied.
+    void el.offsetWidth;
+    el.classList.add('bump');
+    el.addEventListener('animationend', () => el.classList.remove('bump'), { once: true });
+  }
+
+  return { getFocusable, trapFocus, lockScroll, unlockScroll, bump };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/toast.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * toast.js
+ * ------------------------------------------------------------------
+ * Floating toast notifications ("Added to Cart", "Coupon Applied", etc).
+ * Stacks multiple toasts, animates them in/out, and auto-dismisses
+ * each one after ~3.2s (matching the CSS progress-bar animation).
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.Toast = (function () {
+  const ICONS = {
+    success:
+      '<svg class="t-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+    info:
+      '<svg class="t-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>',
+    error:
+      '<svg class="t-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>',
+  };
+
+  function getStack() {
+    return document.getElementById('toastStack');
+  }
+
+  /**
+   * Shows a toast.
+   * @param {string} message
+   * @param {'success'|'info'|'error'} type
+   */
+  function show(message, type = 'success') {
+    const stack = getStack();
+    if (!stack) return;
+
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.setAttribute('role', 'status');
+    toast.innerHTML = `
+      ${ICONS[type] || ICONS.success}
+      <span class="t-text"></span>
+      <div class="t-bar"></div>
+    `;
+    toast.querySelector('.t-text').textContent = message; // textContent avoids HTML injection
+
+    stack.appendChild(toast);
+    // Force a reflow before adding .show so the slide-in transition fires.
+    void toast.offsetWidth;
+    toast.classList.add('show');
+
+    const dismiss = () => {
+      toast.classList.remove('show');
+      toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+    };
+
+    const timer = setTimeout(dismiss, 3200);
+    toast.addEventListener('click', () => {
+      clearTimeout(timer);
+      dismiss();
+    });
+  }
+
+  return { show };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/wishlist.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * wishlist.js
+ * ------------------------------------------------------------------
+ * Manages wishlist state (persisted via storage.js), renders the
+ * slide-out wishlist drawer, and keeps every heart icon on the page
+ * (homepage grid, search results, drawer itself) in sync.
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.Wishlist = (function () {
+  const { Storage, Utils, A11y, Toast, PRODUCTS, getProduct, productArtHTML } = {
+    Storage: RAUNA.Storage,
+    Utils: RAUNA.Utils,
+    A11y: RAUNA.A11y,
+    Toast: RAUNA.Toast,
+    PRODUCTS: RAUNA.PRODUCTS,
+    getProduct: RAUNA.getProduct,
+    productArtHTML: RAUNA.productArtHTML,
+  };
+
+  let ids = Storage.get(Storage.KEYS.WISHLIST, []);
+  let releaseFocusTrap = null;
+  let lastFocusedEl = null;
+
+  const drawer = document.getElementById('wishlistDrawer');
+  const body = document.getElementById('wishlistBody');
+  const countPill = document.getElementById('wishlistCountPill');
+  const navBadge = document.getElementById('wishlistCount');
+
+  function persist() {
+    Storage.set(Storage.KEYS.WISHLIST, ids);
+  }
+
+  function has(id) {
+    return ids.includes(id);
+  }
+
+  function getCount() {
+    return ids.length;
+  }
+
+  /** Adds or removes a product from the wishlist and syncs the whole UI. */
+  function toggle(id, sourceEl) {
+    const product = getProduct(id);
+    if (!product) return;
+
+    if (has(id)) {
+      ids = ids.filter((x) => x !== id);
+      Toast.show('Removed from Wishlist', 'info');
+    } else {
+      ids = [...ids, id];
+      Toast.show('Added to Wishlist ❤️', 'success');
+    }
+    persist();
+    syncHeartButtons(id);
+    if (sourceEl) A11y.bump(sourceEl);
+    updateBadge();
+    if (drawer.classList.contains('open')) render();
+  }
+
+  /** Updates every heart button for a given product id to match wishlist state. */
+  function syncHeartButtons(id) {
+    const active = has(id);
+    document.querySelectorAll(`.js-wishlist-btn[data-id="${id}"]`).forEach((btn) => {
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-label', active ? 'Remove from wishlist' : 'Add to wishlist');
+    });
+  }
+
+  function syncAllHeartButtons() {
+    document.querySelectorAll('.js-wishlist-btn').forEach((btn) => {
+      const id = btn.getAttribute('data-id');
+      const active = has(id);
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-label', active ? 'Remove from wishlist' : 'Add to wishlist');
+    });
+  }
+
+  function updateBadge() {
+    const count = getCount();
+    if (!navBadge) return;
+    navBadge.textContent = count;
+    navBadge.hidden = count === 0;
+    if (count > 0) A11y.bump(navBadge);
+    if (countPill) countPill.textContent = `${count} item${count === 1 ? '' : 's'}`;
+  }
+
+  function stockLabel(stock) {
+    return stock === 'low'
+      ? '<span class="stock-pill low">Only a few left</span>'
+      : '<span class="stock-pill in">In stock</span>';
+  }
+
+  function itemRowHTML(product) {
+    return `
+      <div class="dline-item" data-id="${product.id}">
+        <div class="dline-thumb">${productArtHTML(product)}</div>
+        <div class="dline-info">
+          <h5>${Utils.escapeHtml(product.name)}</h5>
+          <span class="dline-meta">${Utils.escapeHtml(product.colors[0])} · ${Utils.escapeHtml(product.sizes[0])}</span>
+          <span class="dline-price">${Utils.formatINR(product.price)}${product.mrp > product.price ? ` <small style="text-decoration:line-through;color:var(--text-soft);font-size:12px;">${Utils.formatINR(product.mrp)}</small>` : ''}</span>
+          ${stockLabel(product.stock)}
+          <div class="dline-row">
+            <div class="dline-actions">
+              <button class="js-move-to-cart" data-id="${product.id}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/></svg>
+                Move to Cart
+              </button>
+              <button class="js-quick-view" data-id="${product.id}">Quick View</button>
+              <button class="js-remove-wishlist" data-id="${product.id}">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function emptyStateHTML() {
+    return `
+      <div class="drawer-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg>
+        <p>Your wishlist is empty.</p>
+        <button class="cta-btn js-start-shopping">Start Shopping</button>
+      </div>`;
+  }
+
+  function render() {
+    if (ids.length === 0) {
+      body.innerHTML = emptyStateHTML();
+      return;
+    }
+    const items = ids.map((id) => getProduct(id)).filter(Boolean);
+    body.innerHTML = items.map(itemRowHTML).join('');
+  }
+
+  function open(trigger) {
+    lastFocusedEl = trigger || document.activeElement;
+    render();
+    drawer.classList.add('open');
+    document.getElementById('scrim').classList.add('open');
+    A11y.lockScroll();
+    releaseFocusTrap = A11y.trapFocus(drawer);
+    const closeBtn = document.getElementById('wishlistClose');
+    if (closeBtn) closeBtn.focus();
+    document.getElementById('wishlistIcon')?.setAttribute('aria-expanded', 'true');
+  }
+
+  function close() {
+    drawer.classList.remove('open');
+    document.getElementById('scrim').classList.remove('open');
+    A11y.unlockScroll();
+    if (releaseFocusTrap) releaseFocusTrap();
+    document.getElementById('wishlistIcon')?.setAttribute('aria-expanded', 'false');
+    if (lastFocusedEl) lastFocusedEl.focus();
+  }
+
+  function isOpen() {
+    return drawer.classList.contains('open');
+  }
+
+  /** Wires up all static + delegated event listeners. Called once on init. */
+  function init() {
+    updateBadge();
+    syncAllHeartButtons();
+
+    document.getElementById('wishlistClose').addEventListener('click', close);
+
+    // Event delegation: works for hearts that exist now (homepage grid)
+    // AND hearts rendered later by search.js results.
+    document.addEventListener('click', (e) => {
+      const heartBtn = e.target.closest('.js-wishlist-btn');
+      if (heartBtn) {
+        toggle(heartBtn.getAttribute('data-id'), heartBtn);
+        return;
+      }
+      const removeBtn = e.target.closest('.js-remove-wishlist');
+      if (removeBtn) {
+        toggle(removeBtn.getAttribute('data-id'));
+        return;
+      }
+      const moveBtn = e.target.closest('.js-move-to-cart');
+      if (moveBtn) {
+        const id = moveBtn.getAttribute('data-id');
+        RAUNA.Cart.addItem(id, 1);
+        toggle(id); // remove from wishlist after moving
+        return;
+      }
+      const quickViewBtn = e.target.closest('.js-quick-view');
+      if (quickViewBtn) {
+        RAUNA.Navbar.quickView(quickViewBtn.getAttribute('data-id'));
+        return;
+      }
+      if (e.target.closest('.js-start-shopping')) {
+        close();
+        document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  return { init, open, close, isOpen, toggle, has, getCount, render };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/cart.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * cart.js
+ * ------------------------------------------------------------------
+ * Manages cart state (persisted via storage.js): add/remove items,
+ * quantity stepper logic, live subtotal/GST/shipping/total math,
+ * a small demo coupon system, and rendering of the cart drawer.
+ *
+ * Cart line items are keyed by `${productId}__${color}__${size}` so
+ * the same product in two different colors/sizes is tracked as two
+ * separate lines, like a real storefront.
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.Cart = (function () {
+  const Storage = RAUNA.Storage;
+  const Utils = RAUNA.Utils;
+  const A11y = RAUNA.A11y;
+  const Toast = RAUNA.Toast;
+  const getProduct = RAUNA.getProduct;
+  const productArtHTML = RAUNA.productArtHTML;
+
+  // line = { key, productId, color, size, qty }
+  let lines = Storage.get(Storage.KEYS.CART, []);
+  let appliedCoupon = null; // { code, rate }
+  let releaseFocusTrap = null;
+  let lastFocusedEl = null;
+
+  const COUPONS = {
+    RAUNA10: 0.10,
+    WELCOME50: 0.05,
+  };
+
+  const FREE_SHIPPING_THRESHOLD = 999;
+  const FLAT_SHIPPING = 99;
+  const GST_RATE = 0.05;
+
+  const drawer = document.getElementById('cartDrawer');
+  const body = document.getElementById('cartBody');
+  const summaryEl = document.getElementById('cartSummary');
+  const countPill = document.getElementById('cartCountPill');
+  const navBadge = document.getElementById('cartCount');
+
+  function persist() {
+    Storage.set(Storage.KEYS.CART, lines);
+  }
+
+  function lineKey(productId, color, size) {
+    return `${productId}__${color}__${size}`;
+  }
+
+  function getCount() {
+    return lines.reduce((sum, l) => sum + l.qty, 0);
+  }
+
+  /** Adds a product to the cart (defaults to its first color/size). */
+  function addItem(productId, qty = 1, color, size) {
+    const product = getProduct(productId);
+    if (!product) return;
+    const c = color || product.colors[0];
+    const s = size || product.sizes[0];
+    const key = lineKey(productId, c, s);
+
+    const existing = lines.find((l) => l.key === key);
+    if (existing) {
+      existing.qty += qty;
+    } else {
+      lines.push({ key, productId, color: c, size: s, qty });
+    }
+    persist();
+    Toast.show('Added to Cart 🛍️', 'success');
+    updateBadge();
+    if (drawer.classList.contains('open')) render();
+  }
+
+  function updateQty(key, delta) {
+    const line = lines.find((l) => l.key === key);
+    if (!line) return;
+    line.qty = Utils.clamp(line.qty + delta, 0, 99);
+    if (line.qty === 0) {
+      lines = lines.filter((l) => l.key !== key);
+      Toast.show('Removed from Cart', 'info');
+    }
+    persist();
+    updateBadge();
+    render();
+  }
+
+  function removeItem(key) {
+    lines = lines.filter((l) => l.key !== key);
+    persist();
+    Toast.show('Removed from Cart', 'info');
+    updateBadge();
+    render();
+  }
+
+  function applyCoupon(code) {
+    const clean = code.trim().toUpperCase();
+    if (!clean) return;
+    if (COUPONS[clean]) {
+      appliedCoupon = { code: clean, rate: COUPONS[clean] };
+      Toast.show(`Coupon Applied — ${Math.round(COUPONS[clean] * 100)}% off`, 'success');
+    } else {
+      appliedCoupon = null;
+      Toast.show('Invalid coupon code', 'error');
+    }
+    render();
+  }
+
+  function computeTotals() {
+    let subtotal = 0;
+    let savings = 0;
+    lines.forEach((l) => {
+      const p = getProduct(l.productId);
+      if (!p) return;
+      subtotal += p.price * l.qty;
+      savings += (p.mrp - p.price) * l.qty;
+    });
+    const couponDiscount = appliedCoupon ? subtotal * appliedCoupon.rate : 0;
+    const shipping = subtotal === 0 || subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : FLAT_SHIPPING;
+    const gst = Math.round((subtotal - couponDiscount) * GST_RATE);
+    const grandTotal = Math.max(0, subtotal - couponDiscount + shipping + gst);
+    return { subtotal, savings, couponDiscount, shipping, gst, grandTotal };
+  }
+
+  function updateBadge() {
+    const count = getCount();
+    if (!navBadge) return;
+    navBadge.textContent = count;
+    navBadge.hidden = count === 0;
+    if (count > 0) A11y.bump(navBadge);
+    if (countPill) countPill.textContent = `${count} item${count === 1 ? '' : 's'}`;
+  }
+
+  function lineRowHTML(line) {
+    const p = getProduct(line.productId);
+    if (!p) return '';
+    const lineTotal = p.price * line.qty;
+    return `
+      <div class="dline-item" data-key="${line.key}">
+        <div class="dline-thumb">${productArtHTML(p)}</div>
+        <div class="dline-info">
+          <h5>${Utils.escapeHtml(p.name)}</h5>
+          <span class="dline-meta">${Utils.escapeHtml(line.color)} · ${Utils.escapeHtml(line.size)} · Delivery in 2–5 days</span>
+          <span class="dline-price">${Utils.formatINR(lineTotal)}</span>
+          <div class="dline-row">
+            <div class="qty-stepper">
+              <button class="js-qty-dec" data-key="${line.key}" aria-label="Decrease quantity">−</button>
+              <span>${line.qty}</span>
+              <button class="js-qty-inc" data-key="${line.key}" aria-label="Increase quantity">+</button>
+            </div>
+            <div class="dline-actions">
+              <button class="js-remove-cart" data-key="${line.key}">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function emptyStateHTML() {
+    return `
+      <div class="drawer-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="17.5" cy="20.5" r="1"/></svg>
+        <p>Your cart is empty.</p>
+        <button class="cta-btn js-start-shopping-cart">Continue Shopping</button>
+      </div>`;
+  }
+
+  function render() {
+    if (lines.length === 0) {
+      body.innerHTML = emptyStateHTML();
+      summaryEl.hidden = true;
+      return;
+    }
+    body.innerHTML = lines.map(lineRowHTML).join('');
+    summaryEl.hidden = false;
+
+    const t = computeTotals();
+    document.getElementById('sumSubtotal').textContent = Utils.formatINR(t.subtotal);
+    document.getElementById('sumSavings').textContent = '−' + Utils.formatINR(t.savings + t.couponDiscount);
+    document.getElementById('sumShipping').textContent = t.shipping === 0 ? 'Free' : Utils.formatINR(t.shipping);
+    document.getElementById('sumGst').textContent = Utils.formatINR(t.gst);
+    document.getElementById('sumTotal').textContent = Utils.formatINR(t.grandTotal);
+  }
+
+  function open(trigger) {
+    lastFocusedEl = trigger || document.activeElement;
+    render();
+    drawer.classList.add('open');
+    document.getElementById('scrim').classList.add('open');
+    A11y.lockScroll();
+    releaseFocusTrap = A11y.trapFocus(drawer);
+    document.getElementById('cartClose')?.focus();
+    document.getElementById('cartIcon')?.setAttribute('aria-expanded', 'true');
+  }
+
+  function close() {
+    drawer.classList.remove('open');
+    document.getElementById('scrim').classList.remove('open');
+    A11y.unlockScroll();
+    if (releaseFocusTrap) releaseFocusTrap();
+    document.getElementById('cartIcon')?.setAttribute('aria-expanded', 'false');
+    if (lastFocusedEl) lastFocusedEl.focus();
+  }
+
+  function isOpen() {
+    return drawer.classList.contains('open');
+  }
+
+  function init() {
+    updateBadge();
+
+    document.getElementById('cartClose').addEventListener('click', close);
+    document.getElementById('continueShoppingBtn').addEventListener('click', () => {
+      close();
+      document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      if (lines.length === 0) return;
+      Toast.show('This is a design demo — checkout isn\u2019t wired up yet.', 'info');
+    });
+    document.getElementById('couponApply').addEventListener('click', () => {
+      applyCoupon(document.getElementById('couponInput').value);
+    });
+    document.getElementById('couponInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') applyCoupon(e.target.value);
+    });
+
+    // Quick-add-to-cart buttons on product cards (event delegation, works for
+    // both the static homepage grid and dynamically rendered search results).
+    document.addEventListener('click', (e) => {
+      const quickAdd = e.target.closest('.js-quickadd-btn');
+      if (quickAdd) {
+        addItem(quickAdd.getAttribute('data-id'), 1);
+        A11y.bump(quickAdd);
+        return;
+      }
+      const inc = e.target.closest('.js-qty-inc');
+      if (inc) return updateQty(inc.getAttribute('data-key'), 1);
+      const dec = e.target.closest('.js-qty-dec');
+      if (dec) return updateQty(dec.getAttribute('data-key'), -1);
+      const remove = e.target.closest('.js-remove-cart');
+      if (remove) return removeItem(remove.getAttribute('data-key'));
+      if (e.target.closest('.js-start-shopping-cart')) {
+        close();
+        document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  return { init, open, close, isOpen, addItem, updateQty, removeItem, applyCoupon, getCount, render };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/search.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * search.js
+ * ------------------------------------------------------------------
+ * Premium animated search overlay with live (as-you-type) results,
+ * typo-tolerant fuzzy matching across multiple product fields,
+ * recent/trending/popular suggestions, and an empty state with
+ * fallback recommendations.
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.Search = (function () {
+  const Storage = RAUNA.Storage;
+  const Utils = RAUNA.Utils;
+  const A11y = RAUNA.A11y;
+  const PRODUCTS = RAUNA.PRODUCTS;
+  const productArtHTML = RAUNA.productArtHTML;
+
+  const TRENDING = ['Custom Hoodie', 'Oversized Tee', 'Tote Bag', 'Photo Mug', 'Monsoon Edit'];
+  const RECENT_LIMIT = 6;
+
+  let recent = Storage.get(Storage.KEYS.RECENT_SEARCHES, []);
+  let releaseFocusTrap = null;
+  let lastFocusedEl = null;
+
+  const overlay = document.getElementById('searchOverlay');
+  const input = document.getElementById('searchInput');
+  const bodyEl = document.getElementById('searchBody');
+  const closeBtn = document.getElementById('searchClose');
+
+  function persistRecent() {
+    Storage.set(Storage.KEYS.RECENT_SEARCHES, recent);
+  }
+
+  function addRecent(term) {
+    const clean = term.trim();
+    if (!clean) return;
+    recent = [clean, ...recent.filter((r) => r.toLowerCase() !== clean.toLowerCase())].slice(0, RECENT_LIMIT);
+    persistRecent();
+  }
+
+  function clearRecent() {
+    recent = [];
+    persistRecent();
+    renderSuggestions();
+  }
+
+  /** Scores a product against a query across every searchable field. */
+  function scoreProduct(product, query) {
+    const fields = [
+      [product.name, 3],
+      [product.category, 2],
+      [product.collection, 1.5],
+      [product.brand, 1],
+      [product.description, 1],
+      [product.sku, 2],
+      [product.tags.join(' '), 1.5],
+      [product.colors.join(' '), 1],
+      [product.sizes.join(' '), 0.8],
+    ];
+    let total = 0;
+    for (const [text, weight] of fields) {
+      total += Utils.fuzzyScore(text, query) * weight;
+    }
+    return total;
+  }
+
+  function search(query) {
+    const q = query.trim();
+    if (!q) return [];
+    return PRODUCTS.map((p) => ({ product: p, score: scoreProduct(p, q) }))
+      .filter((r) => r.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 8)
+      .map((r) => r.product);
+  }
+
+  function starsHTML() {
+    return `<svg viewBox="0 0 20 20" width="11" height="11" fill="var(--gold)"><path d="M10 1l2.6 6 6.4.5-4.9 4.3 1.5 6.2L10 14.9 4.4 18l1.5-6.2L1 7.5 7.4 7z"/></svg>`;
+  }
+
+  function resultCardHTML(product) {
+    const wishlisted = RAUNA.Wishlist.has(product.id);
+    return `
+      <div class="sr-card" data-id="${product.id}" role="button" tabindex="0" aria-label="View ${Utils.escapeHtml(product.name)}">
+        <div class="sr-thumb">${productArtHTML(product)}</div>
+        <div class="sr-info">
+          <h5>${Utils.escapeHtml(product.name)}</h5>
+          <span class="sr-cat">${Utils.escapeHtml(product.category)} · ${starsHTML()} ${product.rating}</span>
+          <div class="sr-price">${Utils.formatINR(product.price)}${product.mrp > product.price ? ` <small style="font-size:11px;color:var(--text-soft);text-decoration:line-through;">${Utils.formatINR(product.mrp)}</small>` : ''}</div>
+        </div>
+        <div class="sr-actions">
+          <button class="js-wishlist-btn ${wishlisted ? 'active' : ''}" data-id="${product.id}" aria-label="Toggle wishlist">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 20.5s-7.5-4.6-9.8-9C.6 8 2 4.5 5.4 3.8c2-.4 3.9.5 5.1 2.1a1 1 0 0 0 1 .4c.4-.1.7-.2 1-.4 1.2-1.6 3.1-2.5 5.1-2.1 3.4.7 4.8 4.2 3.2 7.7-2.3 4.4-9.8 9-9.8 9z"/></svg>
+          </button>
+          <button class="js-quickadd-btn" data-id="${product.id}" aria-label="Add to cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/></svg>
+          </button>
+        </div>
+      </div>`;
+  }
+
+  function chipHTML(label, iconPath = 'M5 12h14M13 5l7 7-7 7') {
+    return `<button class="chip js-suggestion-chip" data-term="${Utils.escapeHtml(label)}">${Utils.escapeHtml(label)} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="${iconPath}"/></svg></button>`;
+  }
+
+  /** Suggestions shown before the person has typed anything. */
+  function renderSuggestions() {
+    const categories = [...new Set(PRODUCTS.map((p) => p.category))].slice(0, 6);
+    const bestsellers = PRODUCTS.filter((p) => p.isBestseller).slice(0, 4);
+
+    bodyEl.innerHTML = `
+      ${recent.length ? `
+      <div class="search-section">
+        <h6>Recent Searches <button class="js-clear-recent">Clear</button></h6>
+        <div class="chip-row">${recent.map((r) => chipHTML(r)).join('')}</div>
+      </div>` : ''}
+      <div class="search-section">
+        <h6>Trending Searches</h6>
+        <div class="chip-row">${TRENDING.map((t) => chipHTML(t)).join('')}</div>
+      </div>
+      <div class="search-section">
+        <h6>Popular Categories</h6>
+        <div class="chip-row">${categories.map((c) => chipHTML(c)).join('')}</div>
+      </div>
+      <div class="search-section">
+        <h6>Popular Products</h6>
+        <div class="search-results">${bestsellers.map(resultCardHTML).join('')}</div>
+      </div>
+    `;
+  }
+
+  function renderEmptyState(query) {
+    const recommended = PRODUCTS.filter((p) => p.isBestseller).slice(0, 2);
+    const newArrivals = PRODUCTS.filter((p) => p.isNew).slice(0, 2);
+    bodyEl.innerHTML = `
+      <div class="search-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <p><strong>No products found</strong> for "${Utils.escapeHtml(query)}"</p>
+        <p style="font-size:12.5px;">Try a different word, or check the spelling.</p>
+      </div>
+      <div class="search-section">
+        <h6>Recommended Products</h6>
+        <div class="search-results">${recommended.map(resultCardHTML).join('')}</div>
+      </div>
+      <div class="search-section">
+        <h6>New Arrivals</h6>
+        <div class="search-results">${newArrivals.map(resultCardHTML).join('')}</div>
+      </div>
+    `;
+  }
+
+  function renderResults(products) {
+    bodyEl.innerHTML = `
+      <div class="search-section">
+        <h6>${products.length} Result${products.length === 1 ? '' : 's'}</h6>
+        <div class="search-results">${products.map(resultCardHTML).join('')}</div>
+      </div>
+    `;
+  }
+
+  const runSearch = Utils.debounce((query) => {
+    if (!query.trim()) {
+      renderSuggestions();
+      return;
+    }
+    const results = search(query);
+    if (results.length === 0) {
+      renderEmptyState(query);
+    } else {
+      renderResults(results);
+    }
+  }, 150);
+
+  function goToProduct(id) {
+    // No standalone product-page exists in this build, so we scroll to and
+    // briefly highlight the matching card on the homepage grid instead.
+    close();
+    const card = document.querySelector(`#prodGrid .prod-card[data-id="${id}"]`);
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      card.style.transition = 'box-shadow .3s ease';
+      card.style.boxShadow = '0 0 0 3px var(--gold)';
+      setTimeout(() => (card.style.boxShadow = ''), 1600);
+    } else {
+      RAUNA.Toast.show('Full product page coming soon.', 'info');
+    }
+  }
+
+  function open(trigger) {
+    lastFocusedEl = trigger || document.activeElement;
+    renderSuggestions();
+    overlay.classList.add('open');
+    document.getElementById('scrim').classList.add('open');
+    A11y.lockScroll();
+    releaseFocusTrap = A11y.trapFocus(overlay);
+    input.value = '';
+    input.focus();
+    document.getElementById('searchIcon')?.setAttribute('aria-expanded', 'true');
+  }
+
+  function close() {
+    overlay.classList.remove('open');
+    document.getElementById('scrim').classList.remove('open');
+    A11y.unlockScroll();
+    if (releaseFocusTrap) releaseFocusTrap();
+    document.getElementById('searchIcon')?.setAttribute('aria-expanded', 'false');
+    if (lastFocusedEl) lastFocusedEl.focus();
+  }
+
+  function isOpen() {
+    return overlay.classList.contains('open');
+  }
+
+  function toggle() {
+    isOpen() ? close() : open();
+  }
+
+  function init() {
+    input.addEventListener('input', (e) => runSearch(e.target.value));
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && input.value.trim()) {
+        addRecent(input.value);
+      }
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        bodyEl.querySelector('.sr-card')?.focus();
+      }
+    });
+
+    // Roving arrow-key navigation between result cards.
+    bodyEl.addEventListener('keydown', (e) => {
+      const card = e.target.closest('.sr-card');
+      if (!card) return;
+      const cards = Array.from(bodyEl.querySelectorAll('.sr-card'));
+      const idx = cards.indexOf(card);
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        cards[idx + 1]?.focus();
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        cards[idx - 1]?.focus();
+      } else if (e.key === 'Enter') {
+        goToProduct(card.getAttribute('data-id'));
+      }
+    });
+
+    closeBtn.addEventListener('click', close);
+
+    // Click delegation inside the search panel: chips, cards, clear-recent.
+    bodyEl.addEventListener('click', (e) => {
+      if (e.target.closest('.js-wishlist-btn') || e.target.closest('.js-quickadd-btn')) return; // handled by their own modules
+      const chip = e.target.closest('.js-suggestion-chip');
+      if (chip) {
+        const term = chip.getAttribute('data-term');
+        input.value = term;
+        addRecent(term);
+        runSearch(term);
+        return;
+      }
+      if (e.target.closest('.js-clear-recent')) {
+        clearRecent();
+        return;
+      }
+      const card = e.target.closest('.sr-card');
+      if (card) goToProduct(card.getAttribute('data-id'));
+    });
+
+    return { open, close, isOpen, toggle };
+  }
+
+  return { init, open, close, isOpen, toggle };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/navbar.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * navbar.js
+ * ------------------------------------------------------------------
+ * Owns the top-right navbar icons: wires the Search / Wishlist / Cart
+ * buttons to their respective modules, and centralizes global
+ * keyboard shortcuts (Ctrl+K or / to search, Esc to close whatever's
+ * open). Also exposes a tiny `quickView` stub used by the wishlist
+ * drawer's "Quick View" button.
+ * ------------------------------------------------------------------
+ */
+window.RAUNA = window.RAUNA || {};
+
+RAUNA.Navbar = (function () {
+
+  function quickView(productId) {
+    // This build doesn't have a standalone product page, so Quick View
+    // scrolls to (and briefly highlights) the product on the homepage
+    // grid if it's visible there, otherwise shows a toast.
+    const card = document.querySelector(`#prodGrid .prod-card[data-id="${productId}"]`);
+    RAUNA.Wishlist.close();
+    RAUNA.Cart.close();
+    if (card) {
+      setTimeout(() => {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        card.style.transition = 'box-shadow .3s ease';
+        card.style.boxShadow = '0 0 0 3px var(--gold)';
+        setTimeout(() => (card.style.boxShadow = ''), 1600);
+      }, 250);
+    } else {
+      RAUNA.Toast.show('Full product page coming soon.', 'info');
+    }
+  }
+
+  function closeAllPanels() {
+    if (RAUNA.Search.isOpen()) RAUNA.Search.close();
+    if (RAUNA.Wishlist.isOpen()) RAUNA.Wishlist.close();
+    if (RAUNA.Cart.isOpen()) RAUNA.Cart.close();
+  }
+
+  function init() {
+    const searchIcon = document.getElementById('searchIcon');
+    const wishlistIcon = document.getElementById('wishlistIcon');
+    const cartIcon = document.getElementById('cartIcon');
+    const scrim = document.getElementById('scrim');
+
+    searchIcon.addEventListener('click', () => {
+      RAUNA.Search.isOpen() ? RAUNA.Search.close() : RAUNA.Search.open(searchIcon);
+    });
+    wishlistIcon.addEventListener('click', () => {
+      RAUNA.Wishlist.isOpen() ? RAUNA.Wishlist.close() : RAUNA.Wishlist.open(wishlistIcon);
+    });
+    cartIcon.addEventListener('click', () => {
+      RAUNA.Cart.isOpen() ? RAUNA.Cart.close() : RAUNA.Cart.open(cartIcon);
+    });
+
+    // Clicking the shared background scrim closes whichever panel is open.
+    scrim.addEventListener('click', closeAllPanels);
+
+    // Global keyboard shortcuts.
+    document.addEventListener('keydown', (e) => {
+      const isTypingElsewhere =
+        document.activeElement &&
+        ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName) &&
+        document.activeElement.id !== 'searchInput';
+
+      if (e.key === 'Escape') {
+        closeAllPanels();
+        return;
+      }
+      if (isTypingElsewhere) return;
+
+      if ((e.key === 'k' && (e.ctrlKey || e.metaKey)) || (e.key === '/' && !RAUNA.Search.isOpen())) {
+        e.preventDefault();
+        RAUNA.Search.open(searchIcon);
+      }
+    });
+  }
+
+  return { init, quickView, closeAllPanels };
+})();
+
+
+/* ---------------------------------------------------------------------- */
+/* ==  js/main.js  == */
+/* ---------------------------------------------------------------------- */
+/**
+ * main.js
+ * ------------------------------------------------------------------
+ * Boots the whole storefront layer once the DOM is ready. Order
+ * matters here: wishlist/cart set up their badges and event
+ * delegation first, then search (which reads wishlist state when
+ * rendering result cards), then navbar (which wires the icon clicks
+ * that open all three panels).
+ * ------------------------------------------------------------------
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  RAUNA.Wishlist.init();
+  RAUNA.Cart.init();
+  RAUNA.Search.init();
+  RAUNA.Navbar.init();
+});
+
+
+</script>
+</body>
+</html>
